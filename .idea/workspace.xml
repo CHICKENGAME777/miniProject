@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08d71383-8974-48b8-a564-2594be02009a" name="Changes" comment="MainController 민하 수정 끝끝">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/main/Controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/main/Controller/MainController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -110,6 +111,7 @@
     <MESSAGE value="Merge branch 'minha'&#10;&#10;# Conflicts:&#10;#&#9;src/main/java/com/chickengame/mini/main/Controller/MainController.java" />
     <MESSAGE value="MainController 민하 수정 끝" />
     <MESSAGE value="MainController 민하 수정 끝끝" />
-    <option name="LAST_COMMIT_MESSAGE" value="MainController 민하 수정 끝끝" />
+    <MESSAGE value="MainController 민하 최종 진짜 끝" />
+    <option name="LAST_COMMIT_MESSAGE" value="MainController 민하 최종 진짜 끝" />
   </component>
 </project>
