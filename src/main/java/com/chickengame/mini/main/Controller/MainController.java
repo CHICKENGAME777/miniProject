@@ -2,12 +2,12 @@ package com.chickengame.mini.main.Controller;
 
 public class MainController {
 
-    //commit test dahee
 
 
     public static void main(String[] args) {
-        System.out.println("수정!");
+        System.out.println("수정2");
     }
 
-        // 민하 수정수정수정
 }
+
+// 민하 마지막 수정
