@@ -8,8 +8,6 @@ public class Chil77 {
 
     public static void main(String[] args) {
 
-
-
         /* 슬롯머신 777
          *
          * 1. 인덱스에 문자 세 개 입력 (7, ♥, ⑩)
