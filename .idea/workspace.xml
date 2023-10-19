@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08d71383-8974-48b8-a564-2594be02009a" name="Changes" comment="231019 4 이준경">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/Game.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,7 +63,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "android.gradle.sync.needed": "true",
-    "git-widget-placeholder": "junkyeong",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/dev/miniProject/src/main/java/com/chickengame/mini",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -148,6 +147,7 @@
     <MESSAGE value="MainController 수정!!" />
     <MESSAGE value="231019 2 junkyeong" />
     <MESSAGE value="231019 3 이준경" />
-    <option name="LAST_COMMIT_MESSAGE" value="231019 3 이준경" />
+    <MESSAGE value="231019 4 이준경" />
+    <option name="LAST_COMMIT_MESSAGE" value="231019 4 이준경" />
   </component>
 </project>
