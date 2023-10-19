@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08d71383-8974-48b8-a564-2594be02009a" name="Changes" comment="dahee commit test">
+    <list default="true" id="08d71383-8974-48b8-a564-2594be02009a" name="Changes" comment="MainController 민하 수정 끝끝">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/main/Controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/main/Controller/MainController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +53,6 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;android.gradle.sync.needed&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/sooyeun/Desktop/dev/03_miniProject_CHICKENGAME/sampleProject/miniProject&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -112,7 +112,6 @@
     <MESSAGE value="MainController 민하 수정 끝" />
     <MESSAGE value="MainController 민하 수정 끝끝" />
     <MESSAGE value="MainController 민하 최종 진짜 끝" />
-    <MESSAGE value="dahee commit test" />
-    <option name="LAST_COMMIT_MESSAGE" value="dahee commit test" />
+    <option name="LAST_COMMIT_MESSAGE" value="MainController 민하 최종 진짜 끝" />
   </component>
 </project>
