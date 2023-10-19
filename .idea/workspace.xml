@@ -4,11 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06af2c85-9d57-4555-a26c-03cfb9347196" name="Changes" comment="깃 테스트 - 다희" />
+    <list default="true" id="06af2c85-9d57-4555-a26c-03cfb9347196" name="Changes" comment="1019 16:30">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/Game5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/Lotto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/Game6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/UpDownGame.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -53,7 +77,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.miniProject [build]">
+  <component name="RunManager">
     <configuration name="miniProject [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -156,6 +180,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="깃 테스트 - 다희" />
-    <option name="LAST_COMMIT_MESSAGE" value="깃 테스트 - 다희" />
+    <MESSAGE value="1019 16:30" />
+    <option name="LAST_COMMIT_MESSAGE" value="1019 16:30" />
   </component>
 </project>
