@@ -35,28 +35,6 @@ public class MemberDAO {
         }
     }
 
-    private void load() {
-        ObjectInputStream objIn = null;
-        try {
-            objIn = new ObjectInputStream(new BufferedInputStream(new FileInputStream(
-                    "src/main/java/com/chickengame/mini/model/members.txt"
-            )));
-            while (true) {
-                members.add((MemberDTO) objIn.readObject());
-            }
-        } catch (EOFException e) {
-        } catch (IOException e) {
-        } catch (ClassNotFoundException e) {
-        } finally {
-            if (objIn != null) {
-                try {
-                    objIn.close();
-                } catch (IOException e) {
-                }
-            }
-        }
-    }
-
     public static MemberDAO getInstance() {
         if (instance == null) {
             instance = new MemberDAO();
@@ -125,6 +103,28 @@ public class MemberDAO {
                     objOut.close();
                 } catch (IOException e) {
                     throw new RuntimeException(e);
+                }
+            }
+        }
+    }
+
+    private void load() {
+        ObjectInputStream objIn = null;
+        try {
+            objIn = new ObjectInputStream(new BufferedInputStream(new FileInputStream(
+                    "src/main/java/com/chickengame/mini/model/members.txt"
+            )));
+            while (true) {
+                members.add((MemberDTO) objIn.readObject());
+            }
+        } catch (EOFException e) {
+        } catch (IOException e) {
+        } catch (ClassNotFoundException e) {
+        } finally {
+            if (objIn != null) {
+                try {
+                    objIn.close();
+                } catch (IOException e) {
                 }
             }
         }
