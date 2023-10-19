@@ -4,15 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-
-    <list default="true" id="08d71383-8974-48b8-a564-2594be02009a" name="Changes" comment="MainController 민하 수정 끝끝" />
-
-    <list default="true" id="06af2c85-9d57-4555-a26c-03cfb9347196" name="Changes" comment="1019 16:30">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/Game5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/Lotto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/Game6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/UpDownGame.java" afterDir="false" />
+    <list default="true" id="08d71383-8974-48b8-a564-2594be02009a" name="Changes" comment="이준경 23년 10월 19일 오후 10시 15분">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/run/Run.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/view/LoginMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/main/Controller/MainController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/manager/MemberManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/model/MemberDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/model/MemberDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/model/dto/MemberDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/model/dto/MemberDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/view/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/view/MainMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/view/MainMenuManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/view/MenuManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/minha/Chil77.java" beforeDir="false" />
     </list>
-
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,11 +29,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
-
         <task path="$PROJECT_DIR$">
           <activation />
         </task>
-
         <projects_view>
           <tree_state>
             <expand />
@@ -40,7 +41,13 @@
       </state>
     </system>
   </component>
-
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Merge.Settings">
     <option name="BRANCH" value="minha" />
   </component>
@@ -62,20 +69,43 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/sooyeun/Desktop/dev/03_miniProject_CHICKENGAME/sampleProject/miniProject&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "junkyeong",
+    "last_opened_file_path": "/Users/sooyeun/Desktop/dev/03_miniProject_CHICKENGAME/sampleProject/miniProject",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager">
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\dev\miniProject\src\main\java\com\chickengame\mini\model\dto" />
+      <recent name="C:\dev\miniProject\src\main\java\com\chickengame\mini\model" />
+      <recent name="C:\dev\miniProject\src\main\java\com\chickengame\mini\run" />
+      <recent name="C:\dev\miniProject\src\main\java\com\chickengame\mini\view" />
+    </key>
+  </component>
+  <component name="RunManager" selected="애플리케이션.Run">
+    <configuration name="Run" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.chickengame.mini.run.Run" />
+      <module name="sampleProject.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.chickengame.mini.run.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="miniProject [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -135,6 +165,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="애플리케이션.Run" />
         <item itemvalue="Gradle.miniProject [build]" />
         <item itemvalue="Gradle.miniProject [clean]" />
       </list>
@@ -149,6 +180,7 @@
       <option name="presentableId" value="Default" />
       <updated>1697612473106</updated>
       <workItem from="1697612474326" duration="2175000" />
+      <workItem from="1697715123082" duration="6497000" />
     </task>
     <task id="LOCAL-00001" summary="MainController 수정!!!">
       <option name="closed" value="true" />
@@ -166,7 +198,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697615103658</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="이준경 23년 10월 19일 오후 8시 32분">
+      <option name="closed" value="true" />
+      <created>1697715151616</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1697715151616</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,9 +231,10 @@
     <MESSAGE value="MainController 민하 수정 끝" />
     <MESSAGE value="MainController 민하 수정 끝끝" />
     <MESSAGE value="MainController 민하 최종 진짜 끝" />
-    <option name="LAST_COMMIT_MESSAGE" value="MainController 민하 최종 진짜 끝" />
     <MESSAGE value="깃 테스트 - 다희" />
     <MESSAGE value="1019 16:30" />
-    <option name="LAST_COMMIT_MESSAGE" value="1019 16:30" />
+    <MESSAGE value="이준경 23년 10월 19일 오후 8시 32분" />
+    <MESSAGE value="이준경 23년 10월 19일 오후 10시 15분" />
+    <option name="LAST_COMMIT_MESSAGE" value="이준경 23년 10월 19일 오후 10시 15분" />
   </component>
 </project>
