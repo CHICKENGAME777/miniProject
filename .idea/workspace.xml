@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08d71383-8974-48b8-a564-2594be02009a" name="Changes" comment="이준경 23년 10월 19일 오후 10시 21분">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/model/MemberDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/model/MemberDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/model/dto/MemberDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/model/dto/MemberDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/view/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/view/MainMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/view/MenuManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/view/MenuManager.java" afterDir="false" />
-    </list>
+    <list default="true" id="08d71383-8974-48b8-a564-2594be02009a" name="Changes" comment="이준경 23년 10월 19일 오후 11시 48분" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -163,7 +157,7 @@
       <updated>1697612473106</updated>
       <workItem from="1697612474326" duration="2175000" />
       <workItem from="1697715123082" duration="6654000" />
-      <workItem from="1697723806976" duration="2046000" />
+      <workItem from="1697723806976" duration="3224000" />
     </task>
     <task id="LOCAL-00001" summary="MainController 수정!!!">
       <option name="closed" value="true" />
@@ -205,7 +199,31 @@
       <option name="project" value="LOCAL" />
       <updated>1697721753656</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="이준경 23년 10월 19일 오후 11시 48분">
+      <option name="closed" value="true" />
+      <created>1697726936872</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1697726936872</updated>
+    </task>
+    <task id="LOCAL-00007" summary="이준경 23년 10월 19일 오후 11시 48분">
+      <option name="closed" value="true" />
+      <created>1697726978861</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1697726978861</updated>
+    </task>
+    <task id="LOCAL-00008" summary="이준경 23년 10월 19일 오후 11시 48분">
+      <option name="closed" value="true" />
+      <created>1697727021332</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1697727021332</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,6 +253,7 @@
     <MESSAGE value="이준경 23년 10월 19일 오후 8시 32분" />
     <MESSAGE value="이준경 23년 10월 19일 오후 10시 15분" />
     <MESSAGE value="이준경 23년 10월 19일 오후 10시 21분" />
-    <option name="LAST_COMMIT_MESSAGE" value="이준경 23년 10월 19일 오후 10시 21분" />
+    <MESSAGE value="이준경 23년 10월 19일 오후 11시 48분" />
+    <option name="LAST_COMMIT_MESSAGE" value="이준경 23년 10월 19일 오후 11시 48분" />
   </component>
 </project>
