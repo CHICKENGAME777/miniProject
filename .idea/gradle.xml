@@ -5,6 +5,11 @@
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+=======
+>>>>>>> sooyeun
         <option name="externalProjectPath" value="$PROJECT_DIR$/../../ CHICKENGAME/sampleProject" />
         <option name="gradleJvm" value="11" />
         <option name="modules">
@@ -16,8 +21,12 @@
       <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="gradleJvm" value="11" />
+<<<<<<< HEAD
 =======
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+>>>>>>> sooyeun
+=======
+>>>>>>> 5c026f8c1b6dfc53907dd968a2d1c8776c094fa2
 >>>>>>> sooyeun
         <option name="modules">
           <set>
