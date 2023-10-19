@@ -2,11 +2,12 @@ package com.chickengame.mini.main.Controller;
 
 public class MainController {
 
-
-
     public static void main(String[] args) {
-        System.out.println("수정!");
+        System.out.println("777 민하");
     }
 
-        // 민하 수정수정수정
 }
+
+
+// 777 민하
+
