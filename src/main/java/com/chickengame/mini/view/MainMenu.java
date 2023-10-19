@@ -4,6 +4,11 @@ import com.chickengame.mini.controller.GameManager;
 
 import java.util.Scanner;
 
+import com.chickengame.mini.model.MemberDAO;
+import com.chickengame.mini.model.dto.MemberDTO;
+
+import java.util.Scanner;
+
 public class MainMenu {
     private GameManager gameManager = new GameManager();
 
