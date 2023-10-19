@@ -1,0 +1,132 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"08d71383-8974-48b8-a564-2594be02009a\" name=\"Changes\" comment=\"MainController 수정!!\" />\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"ExternalProjectsData\">\n    <projectState path=\"$PROJECT_DIR$\">\n      <ProjectState />\n    </projectState>\n  </component>\n  <component name=\"ExternalProjectsManager\">\n    <system id=\"GRADLE\">\n      <state>\n        <projects_view>\n          <tree_state>\n            <expand />\n            <select />\n          </tree_state>\n        </projects_view>\n      </state>\n    </system>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\n      <map>\n        <entry key=\"$PROJECT_DIR$\" value=\"main\" />\n      </map>\n    </option>\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;associatedIndex&quot;: 3\n}</component>\n  <component name=\"ProjectId\" id=\"2WvUJBAvcfFii8zxNGIINc6eEhL\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">{\n  &quot;keyToString&quot;: {\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\n    &quot;last_opened_file_path&quot;: &quot;/Users/sooyeun/Desktop/dev/03_miniProject_CHICKENGAME/sampleProject/miniProject&quot;,\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\n  }\n}</component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"08d71383-8974-48b8-a564-2594be02009a\" name=\"Changes\" comment=\"\" />\n      <created>1697612473106</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1697612473106</updated>\n      <workItem from=\"1697612474326\" duration=\"2175000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"MainController 수정!!!\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1697614995760</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1697614995760</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"MainController 수정!!\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1697615103658</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1697615103658</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"3\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"MainController 수정!!!\" />\n    <MESSAGE value=\"MainController 수정!!\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"MainController 수정!!\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 334de532d4580d83c1d4d4ed748b7373e92b3ac6)
++++ b/.idea/workspace.xml	(date 1697693616400)
+@@ -4,7 +4,7 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="08d71383-8974-48b8-a564-2594be02009a" name="Changes" comment="MainController 수정!!" />
++    <list default="true" id="08d71383-8974-48b8-a564-2594be02009a" name="Changes" comment="MainController 수정했지롱" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -26,11 +26,14 @@
+         </projects_view>
+       </state>
+     </system>
++  </component>
++  <component name="Git.Merge.Settings">
++    <option name="BRANCH" value="sooyeun" />
+   </component>
+   <component name="Git.Settings">
+     <option name="RECENT_BRANCH_BY_REPOSITORY">
+       <map>
+-        <entry key="$PROJECT_DIR$" value="main" />
++        <entry key="$PROJECT_DIR$" value="sooyeun" />
+       </map>
+     </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+@@ -55,6 +58,21 @@
+     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+   }
+ }</component>
++  <component name="RunManager">
++    <configuration default="true" type="JetRunConfigurationType">
++      <module name="sampleProject.main" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
++      <module name="sampleProject.main" />
++      <option name="filePath" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++  </component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+     <task active="true" id="Default" summary="Default task">
+@@ -64,6 +82,7 @@
+       <option name="presentableId" value="Default" />
+       <updated>1697612473106</updated>
+       <workItem from="1697612474326" duration="2175000" />
++      <workItem from="1697618785148" duration="1079000" />
+     </task>
+     <task id="LOCAL-00001" summary="MainController 수정!!!">
+       <option name="closed" value="true" />
+@@ -81,7 +100,23 @@
+       <option name="project" value="LOCAL" />
+       <updated>1697615103658</updated>
+     </task>
+-    <option name="localTasksCounter" value="3" />
++    <task id="LOCAL-00003" summary="MainController 수정했지롱">
++      <option name="closed" value="true" />
++      <created>1697618801609</created>
++      <option name="number" value="00003" />
++      <option name="presentableId" value="LOCAL-00003" />
++      <option name="project" value="LOCAL" />
++      <updated>1697618801609</updated>
++    </task>
++    <task id="LOCAL-00004" summary="MainController 수정했지롱">
++      <option name="closed" value="true" />
++      <created>1697618855617</created>
++      <option name="number" value="00004" />
++      <option name="presentableId" value="LOCAL-00004" />
++      <option name="project" value="LOCAL" />
++      <updated>1697618855617</updated>
++    </task>
++    <option name="localTasksCounter" value="5" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -101,6 +136,7 @@
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="MainController 수정!!!" />
+     <MESSAGE value="MainController 수정!!" />
+-    <option name="LAST_COMMIT_MESSAGE" value="MainController 수정!!" />
++    <MESSAGE value="MainController 수정했지롱" />
++    <option name="LAST_COMMIT_MESSAGE" value="MainController 수정했지롱" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: .idea/gradle.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"GradleMigrationSettings\" migrationVersion=\"1\" />\n  <component name=\"GradleSettings\">\n    <option name=\"linkedExternalProjectsSettings\">\n      <GradleProjectSettings>\n<<<<<<< HEAD\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$/../../ CHICKENGAME/sampleProject\" />\n        <option name=\"gradleJvm\" value=\"11\" />\n        <option name=\"modules\">\n          <set>\n            <option value=\"$PROJECT_DIR$/../../ CHICKENGAME/sampleProject\" />\n          </set>\n        </option>\n      </GradleProjectSettings>\n      <GradleProjectSettings>\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\n        <option name=\"gradleJvm\" value=\"11\" />\n=======\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\n>>>>>>> sooyeun\n        <option name=\"modules\">\n          <set>\n            <option value=\"$PROJECT_DIR$\" />\n          </set>\n        </option>\n      </GradleProjectSettings>\n    </option>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/gradle.xml b/.idea/gradle.xml
+--- a/.idea/gradle.xml	(revision 334de532d4580d83c1d4d4ed748b7373e92b3ac6)
++++ b/.idea/gradle.xml	(date 1697693616403)
+@@ -4,21 +4,7 @@
+   <component name="GradleSettings">
+     <option name="linkedExternalProjectsSettings">
+       <GradleProjectSettings>
+-<<<<<<< HEAD
+-        <option name="externalProjectPath" value="$PROJECT_DIR$/../../ CHICKENGAME/sampleProject" />
+-        <option name="gradleJvm" value="11" />
+-        <option name="modules">
+-          <set>
+-            <option value="$PROJECT_DIR$/../../ CHICKENGAME/sampleProject" />
+-          </set>
+-        </option>
+-      </GradleProjectSettings>
+-      <GradleProjectSettings>
+         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+-        <option name="gradleJvm" value="11" />
+-=======
+-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+->>>>>>> sooyeun
+         <option name="modules">
+           <set>
+             <option value="$PROJECT_DIR$" />
