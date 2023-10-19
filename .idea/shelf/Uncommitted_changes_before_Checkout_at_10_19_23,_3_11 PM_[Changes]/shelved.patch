@@ -1,0 +1,151 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"08d71383-8974-48b8-a564-2594be02009a\" name=\"Changes\" comment=\"MainController 수정!!\">\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/com/chickengame/mini/controller/GameManager.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/Game1.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/Game2.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/Game3.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/Game4.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/Game5.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/Game6.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/Game7.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/Game8.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/com/chickengame/mini/manager/MemberManager.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/com/chickengame/mini/model/MemberDAO.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/com/chickengame/mini/model/dto/MemberDTO.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/com/chickengame/mini/view/MainMenu.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/com/chickengame/mini/view/MainMenuManager.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/chickengame/mini/main/Controller/MainController.java\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/chickengame/mini/main/view/MainView.java\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/chickengame/mini/model/dao/MainDAO.java\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/chickengame/mini/model/dto/MainDTO.java\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/chickengame/mini/model/service/MainService.java\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/org/example/Leejunkyeong.java\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/org/example/Main.java\" beforeDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"ExternalProjectsData\">\n    <projectState path=\"$PROJECT_DIR$\">\n      <ProjectState />\n    </projectState>\n  </component>\n  <component name=\"ExternalProjectsManager\">\n    <system id=\"GRADLE\">\n      <state>\n        <projects_view>\n          <tree_state>\n            <expand />\n            <select />\n          </tree_state>\n        </projects_view>\n      </state>\n    </system>\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\n      <map>\n        <entry key=\"$PROJECT_DIR$\" value=\"main\" />\n      </map>\n    </option>\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;associatedIndex&quot;: 3\n}</component>\n  <component name=\"ProjectId\" id=\"2WvUJBAvcfFii8zxNGIINc6eEhL\" />\n  <component name=\"ProjectLevelVcsManager\">\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\n  </component>\n  <component name=\"ProjectViewState\">\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\n    \"WebServerToolWindowFactoryState\": \"false\",\n    \"git-widget-placeholder\": \"junkyeong\",\n    \"last_opened_file_path\": \"C:/dev/miniProject/src/main/java/com/chickengame/mini\",\n    \"node.js.detected.package.eslint\": \"true\",\n    \"node.js.detected.package.tslint\": \"true\",\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\n    \"vue.rearranger.settings.migration\": \"true\"\n  }\n}]]></component>\n  <component name=\"RecentsManager\">\n    <key name=\"CopyFile.RECENT_KEYS\">\n      <recent name=\"C:\\dev\\miniProject\\src\\main\\java\\com\\chickengame\\mini\" />\n    </key>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"08d71383-8974-48b8-a564-2594be02009a\" name=\"Changes\" comment=\"\" />\n      <created>1697612473106</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1697612473106</updated>\n      <workItem from=\"1697612474326\" duration=\"2175000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"MainController 수정!!!\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1697614995760</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1697614995760</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"MainController 수정!!\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1697615103658</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1697615103658</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"3\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State>\n              <option name=\"FILTERS\">\n                <map>\n                  <entry key=\"branch\">\n                    <value>\n                      <list>\n                        <option value=\"junkyeong\" />\n                      </list>\n                    </value>\n                  </entry>\n                </map>\n              </option>\n            </State>\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"MainController 수정!!!\" />\n    <MESSAGE value=\"MainController 수정!!\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"MainController 수정!!\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 410b7d32e5393e37957aae699977158fa330ae2d)
++++ b/.idea/workspace.xml	(date 1697694015778)
+@@ -5,28 +5,8 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="08d71383-8974-48b8-a564-2594be02009a" name="Changes" comment="MainController 수정!!">
+-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/controller/GameManager.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/Game1.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/Game2.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/Game3.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/Game4.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/Game5.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/Game6.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/Game7.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/Game8.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/manager/MemberManager.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/model/MemberDAO.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/model/dto/MemberDTO.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/view/MainMenu.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/view/MainMenuManager.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/main/Controller/MainController.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/main/view/MainView.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/model/dao/MainDAO.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/model/dto/MainDTO.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/model/service/MainService.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Leejunkyeong.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -49,13 +29,6 @@
+         </projects_view>
+       </state>
+     </system>
+-  </component>
+-  <component name="FileTemplateManagerImpl">
+-    <option name="RECENT_TEMPLATES">
+-      <list>
+-        <option value="Class" />
+-      </list>
+-    </option>
+   </component>
+   <component name="Git.Settings">
+     <option name="RECENT_BRANCH_BY_REPOSITORY">
+@@ -69,31 +42,22 @@
+   &quot;associatedIndex&quot;: 3
+ }</component>
+   <component name="ProjectId" id="2WvUJBAvcfFii8zxNGIINc6eEhL" />
+-  <component name="ProjectLevelVcsManager">
+-    <ConfirmationsSetting value="2" id="Add" />
+-  </component>
+   <component name="ProjectViewState">
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "WebServerToolWindowFactoryState": "false",
+-    "git-widget-placeholder": "junkyeong",
+-    "last_opened_file_path": "C:/dev/miniProject/src/main/java/com/chickengame/mini",
+-    "node.js.detected.package.eslint": "true",
+-    "node.js.detected.package.tslint": "true",
+-    "node.js.selected.package.eslint": "(autodetect)",
+-    "node.js.selected.package.tslint": "(autodetect)",
+-    "vue.rearranger.settings.migration": "true"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
++    &quot;last_opened_file_path&quot;: &quot;/Users/sooyeun/Desktop/dev/03_miniProject_CHICKENGAME/sampleProject/miniProject&quot;,
++    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
++    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
++    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
++    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
++    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+   }
+-}]]></component>
+-  <component name="RecentsManager">
+-    <key name="CopyFile.RECENT_KEYS">
+-      <recent name="C:\dev\miniProject\src\main\java\com\chickengame\mini" />
+-    </key>
+-  </component>
++}</component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+     <task active="true" id="Default" summary="Default task">
+@@ -131,19 +95,7 @@
+       <map>
+         <entry key="MAIN">
+           <value>
+-            <State>
+-              <option name="FILTERS">
+-                <map>
+-                  <entry key="branch">
+-                    <value>
+-                      <list>
+-                        <option value="junkyeong" />
+-                      </list>
+-                    </value>
+-                  </entry>
+-                </map>
+-              </option>
+-            </State>
++            <State />
+           </value>
+         </entry>
+       </map>
+Index: .idea/gradle.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"GradleMigrationSettings\" migrationVersion=\"1\" />\n  <component name=\"GradleSettings\">\n    <option name=\"linkedExternalProjectsSettings\">\n      <GradleProjectSettings>\n<<<<<<< HEAD\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$/../../ CHICKENGAME/sampleProject\" />\n        <option name=\"gradleJvm\" value=\"11\" />\n        <option name=\"modules\">\n          <set>\n            <option value=\"$PROJECT_DIR$/../../ CHICKENGAME/sampleProject\" />\n          </set>\n        </option>\n      </GradleProjectSettings>\n      <GradleProjectSettings>\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\n        <option name=\"gradleJvm\" value=\"11\" />\n=======\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\n>>>>>>> sooyeun\n        <option name=\"modules\">\n          <set>\n            <option value=\"$PROJECT_DIR$\" />\n          </set>\n        </option>\n      </GradleProjectSettings>\n    </option>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/gradle.xml b/.idea/gradle.xml
+--- a/.idea/gradle.xml	(revision 410b7d32e5393e37957aae699977158fa330ae2d)
++++ b/.idea/gradle.xml	(date 1697693631114)
+@@ -4,21 +4,7 @@
+   <component name="GradleSettings">
+     <option name="linkedExternalProjectsSettings">
+       <GradleProjectSettings>
+-<<<<<<< HEAD
+-        <option name="externalProjectPath" value="$PROJECT_DIR$/../../ CHICKENGAME/sampleProject" />
+-        <option name="gradleJvm" value="11" />
+-        <option name="modules">
+-          <set>
+-            <option value="$PROJECT_DIR$/../../ CHICKENGAME/sampleProject" />
+-          </set>
+-        </option>
+-      </GradleProjectSettings>
+-      <GradleProjectSettings>
+         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+-        <option name="gradleJvm" value="11" />
+-=======
+-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+->>>>>>> sooyeun
+         <option name="modules">
+           <set>
+             <option value="$PROJECT_DIR$" />
