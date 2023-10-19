@@ -45,7 +45,6 @@ public class MemberDAO {
                 members.add((MemberDTO) objIn.readObject());
             }
         } catch (EOFException e) {
-
         } catch (IOException e) {
         } catch (ClassNotFoundException e) {
         } finally {
