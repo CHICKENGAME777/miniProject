@@ -107,7 +107,7 @@ public class Chil77 {
                     System.out.print("\u001B[0m");
                     count = 0;
                 } else {
-//            System.out.println("");
+
                     System.out.printf("\n%45s", "꽝!\n");
                 }
                 System.out.printf("%52s", "남은 마일리지는 " + score + "점 입니다.\n\n");
