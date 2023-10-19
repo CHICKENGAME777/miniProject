@@ -4,18 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08d71383-8974-48b8-a564-2594be02009a" name="Changes" comment="MainController 수정!!">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/Game.java" afterDir="false" />
+    <list default="true" id="08d71383-8974-48b8-a564-2594be02009a" name="Changes" comment="231019 4 이준경">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/controller/GameManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/controller/GameManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/Game1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/Game1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/Game2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/Game2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/Game3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/Game3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/Game4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/Game4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/Game5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/Game5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/Game6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/Game6.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/Game7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/Game7.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/Game8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/Game8.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/Game.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +43,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="junkyeong" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -67,20 +58,21 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;junkyeong&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/dev/miniProject/src/main/java/com/chickengame/mini&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "android.gradle.sync.needed": "true",
+    "git-widget-placeholder": "junkyeong",
+    "last_opened_file_path": "C:/dev/miniProject/src/main/java/com/chickengame/mini",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\dev\miniProject\src\main\java\com\chickengame\mini" />
@@ -95,6 +87,8 @@
       <option name="presentableId" value="Default" />
       <updated>1697612473106</updated>
       <workItem from="1697612474326" duration="2175000" />
+      <workItem from="1697683673312" duration="32000" />
+      <workItem from="1697696126730" duration="67000" />
     </task>
     <task id="LOCAL-00001" summary="MainController 수정!!!">
       <option name="closed" value="true" />
