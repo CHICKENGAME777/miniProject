@@ -45,7 +45,9 @@ public class MenuManager {
         if (index < 0) {
             System.out.print("이름: ");
             String name = sc.nextLine();
-            memberDAO.addMember(new MemberDTO(id, name));
+            MemberDTO me = new MemberDTO(id, name);
+            memberDAO.addMember(me);
+            memberDAO.setMe(me);
             System.out.println("회원가입을 환영합니다.");
             return true;
         } else {
@@ -56,12 +58,6 @@ public class MenuManager {
 
     public void showRank() {
         List<MemberDTO> members = memberDAO.getMembers();
-        members.sort(new Comparator<>() {
-            @Override
-            public int compare(MemberDTO o1, MemberDTO o2) {
-                return o1.getScore() - o2.getScore();
-            }
-        });
         System.out.println("== 전체 멤버를 출력합니다. ==");
         for (MemberDTO member : members) {
             System.out.println(member);
@@ -69,8 +65,34 @@ public class MenuManager {
     }
 
     public void showProfile() {
-        System.out.println("내 프로필을 출력하빈다.");
+        System.out.println("내 프로필을 출력합니다.");
         MemberDTO me = memberDAO.getMe();
         System.out.println(me);
+    }
+
+    public void updateProfile() {
+        MemberDTO me = memberDAO.getMe();
+        while (true) {
+            System.out.println("내 프로필을 수정합니다.");
+            System.out.println("1. 이름 수정");
+            System.out.println("2. 이전 메뉴로 나가기");
+            System.out.print("메뉴: ");
+            int menu = sc.nextInt();
+            switch (menu) {
+                case 1:
+                    System.out.print("변경할 이름: ");
+                    sc.nextLine();
+                    String name = sc.nextLine();
+                    me.setName(name);
+                    System.out.println("변경이 완료됐습니다.");
+                    return;
+                case 2:
+                    System.out.println("이전 메뉴로 나갑니다.");
+                    return;
+                default:
+                    System.out.println("잘못 입력했습니다. 다시 입력해주세요.");
+                    break;
+            }
+        }
     }
 }

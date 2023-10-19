@@ -15,8 +15,9 @@ public class MainMenu {
             System.out.println("메인 메뉴 화면입니다.");
             System.out.println("1. 전체 멤버 순위 출력");
             System.out.println("2. 내 정보 출력");
-            System.out.println("3. 게임 시작");
-            System.out.println("4. 게임 종료");
+            System.out.println("3. 내 정보 수정");
+            System.out.println("4. 게임 시작");
+            System.out.println("5. 게임 종료");
             System.out.print("메뉴: ");
             int menu = sc.nextInt();
             switch (menu) {
@@ -27,9 +28,11 @@ public class MainMenu {
                     showProfile();
                     break;
                 case 3:
+                    updateProfile();
+                case 4:
                     gameStart();
                     break;
-                case 4:
+                case 5:
                     System.out.println("게임을 종료합니다.");
                     return;
                 default:
@@ -39,8 +42,12 @@ public class MainMenu {
         }
     }
 
+
     private void showRank() {
         menuManager.showRank();
+    }
+    private void updateProfile() {
+        menuManager.updateProfile();
     }
 
     private void showProfile() {

@@ -1,13 +1,16 @@
 package com.chickengame.mini.model.dto;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class MemberDTO {
-    int score;
-    String name;
-    String id;
+public class MemberDTO implements Serializable {
+    private int score;
+    private String name;
+    private String id;
 
-    int signDate;
+    private int signDate;
+
+    private int rank;
 
     public MemberDTO() {
     }
@@ -57,10 +60,12 @@ public class MemberDTO {
     public void setSignDate(int signDate) {
         this.signDate = signDate;
     }
-    public void addScore(int score){
-        this.score+=score;
+
+    public void addScore(int score) {
+        this.score += score;
     }
-    public void resetScore(){
+
+    public void resetScore() {
         this.score = 0;
     }
 
@@ -71,6 +76,7 @@ public class MemberDTO {
                 ", name='" + name + '\'' +
                 ", id='" + id + '\'' +
                 ", signDate=" + signDate +
+                ", rank=" + rank +
                 '}';
     }
 
@@ -85,5 +91,13 @@ public class MemberDTO {
     @Override
     public int hashCode() {
         return Objects.hash(score, name, id, signDate);
+    }
+
+    public int getRank() {
+        return rank;
+    }
+
+    public void setRank(int rank) {
+        this.rank = rank;
     }
 }
