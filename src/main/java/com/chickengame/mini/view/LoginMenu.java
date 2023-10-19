@@ -3,9 +3,8 @@ package com.chickengame.mini.view;
 import java.util.Scanner;
 
 public class LoginMenu {
-    MenuManager menuManager = MenuManager.getInstance();
-    Scanner sc = new Scanner(System.in);
-    boolean isLogin;
+    private Scanner sc = new Scanner(System.in);
+    private boolean isLogin;
 
     public void run() {
         while (true) {
@@ -40,10 +39,10 @@ public class LoginMenu {
     }
 
     private boolean login() {
-        return menuManager.login();
+        return MenuManager.getInstance().login();
     }
 
     private boolean register() {
-        return menuManager.register();
+        return MenuManager.getInstance().register();
     }
 }

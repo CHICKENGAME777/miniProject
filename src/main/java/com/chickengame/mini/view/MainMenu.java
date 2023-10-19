@@ -5,10 +5,9 @@ import com.chickengame.mini.controller.GameManager;
 import java.util.Scanner;
 
 public class MainMenu {
-    MenuManager menuManager = MenuManager.getInstance();
-    GameManager gameManager = new GameManager();
+    private GameManager gameManager = new GameManager();
 
-    Scanner sc = new Scanner(System.in);
+    private Scanner sc = new Scanner(System.in);
 
     public void run() {
         while (true) {
@@ -42,16 +41,16 @@ public class MainMenu {
         }
     }
 
-
     private void showRank() {
-        menuManager.showRank();
-    }
-    private void updateProfile() {
-        menuManager.updateProfile();
+        MenuManager.getInstance().showRank();
     }
 
     private void showProfile() {
-        menuManager.showProfile();
+        MenuManager.getInstance().showProfile();
+    }
+
+    private void updateProfile() {
+        MenuManager.getInstance().updateProfile();
     }
 
     private void gameStart() {

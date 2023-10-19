@@ -8,25 +8,25 @@ public class MemberDTO implements Serializable {
     private String name;
     private String id;
 
-    private int signDate;
+    private int registDate;
 
     private int rank;
 
     public MemberDTO() {
     }
 
-    public MemberDTO(int score, String id, String name, int signDate) {
+    public MemberDTO(int score, String id, String name, int registDate) {
         this.score = score;
         this.id = id;
         this.name = name;
-        this.signDate = signDate;
+        this.registDate = registDate;
     }
 
     public MemberDTO(String id, String name) {
         this.score = 0;
         this.id = id;
         this.name = name;
-        this.signDate = 0;
+        this.registDate = 0;
     }
 
     public int getScore() {
@@ -53,12 +53,20 @@ public class MemberDTO implements Serializable {
         this.id = id;
     }
 
-    public int getSignDate() {
-        return signDate;
+    public int getRegistDate() {
+        return registDate;
     }
 
-    public void setSignDate(int signDate) {
-        this.signDate = signDate;
+    public void setRegistDate(int registDate) {
+        this.registDate = registDate;
+    }
+
+    public int getRank() {
+        return rank;
+    }
+
+    public void setRank(int rank) {
+        this.rank = rank;
     }
 
     public void addScore(int score) {
@@ -75,7 +83,7 @@ public class MemberDTO implements Serializable {
                 "score=" + score +
                 ", name='" + name + '\'' +
                 ", id='" + id + '\'' +
-                ", signDate=" + signDate +
+                ", registDate=" + registDate +
                 ", rank=" + rank +
                 '}';
     }
@@ -85,19 +93,11 @@ public class MemberDTO implements Serializable {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         MemberDTO memberDTO = (MemberDTO) o;
-        return score == memberDTO.score && signDate == memberDTO.signDate && Objects.equals(name, memberDTO.name) && Objects.equals(id, memberDTO.id);
+        return score == memberDTO.score && registDate == memberDTO.registDate && Objects.equals(name, memberDTO.name) && Objects.equals(id, memberDTO.id);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(score, name, id, signDate);
-    }
-
-    public int getRank() {
-        return rank;
-    }
-
-    public void setRank(int rank) {
-        this.rank = rank;
+        return Objects.hash(score, name, id, registDate);
     }
 }

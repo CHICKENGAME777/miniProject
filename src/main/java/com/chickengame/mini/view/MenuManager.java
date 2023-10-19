@@ -8,9 +8,8 @@ import java.util.List;
 import java.util.Scanner;
 
 public class MenuManager {
-    private MemberDAO memberDAO = MemberDAO.getInstance();
     private static MenuManager instance;
-    Scanner sc = new Scanner(System.in);
+    private Scanner sc = new Scanner(System.in);
 
     private MenuManager() {
     }
@@ -26,13 +25,13 @@ public class MenuManager {
         System.out.println("== 로그인을 시작합니다 ==");
         System.out.print("아이디: ");
         String id = sc.nextLine();
-        int index = memberDAO.containsMemberById(id);
+        int index = MemberDAO.getInstance().containsMemberById(id);
         if (index < 0) {
             System.out.println("로그인에 실패했습니다.");
             return false;
         } else {
             System.out.println("기존 회원으로 로그인 하였습니다.");
-            memberDAO.setMe(index);
+            MemberDAO.getInstance().setMe(index);
             return true;
         }
     }
@@ -41,13 +40,13 @@ public class MenuManager {
         System.out.println("== 회원가입을 시작합니다 ==");
         System.out.print("아이디: ");
         String id = sc.nextLine();
-        int index = memberDAO.containsMemberById(id);
+        int index = MemberDAO.getInstance().containsMemberById(id);
         if (index < 0) {
             System.out.print("이름: ");
             String name = sc.nextLine();
             MemberDTO me = new MemberDTO(id, name);
-            memberDAO.addMember(me);
-            memberDAO.setMe(me);
+            MemberDAO.getInstance().addMember(me);
+            MemberDAO.getInstance().setMe(me);
             System.out.println("회원가입을 환영합니다.");
             return true;
         } else {
@@ -57,7 +56,7 @@ public class MenuManager {
     }
 
     public void showRank() {
-        List<MemberDTO> members = memberDAO.getMembers();
+        List<MemberDTO> members = MemberDAO.getInstance().getMembers();
         System.out.println("== 전체 멤버를 출력합니다. ==");
         for (MemberDTO member : members) {
             System.out.println(member);
@@ -66,12 +65,12 @@ public class MenuManager {
 
     public void showProfile() {
         System.out.println("내 프로필을 출력합니다.");
-        MemberDTO me = memberDAO.getMe();
+        MemberDTO me = MemberDAO.getInstance().getMe();
         System.out.println(me);
     }
 
     public void updateProfile() {
-        MemberDTO me = memberDAO.getMe();
+        MemberDTO me = MemberDAO.getInstance().getMe();
         while (true) {
             System.out.println("내 프로필을 수정합니다.");
             System.out.println("1. 이름 수정");

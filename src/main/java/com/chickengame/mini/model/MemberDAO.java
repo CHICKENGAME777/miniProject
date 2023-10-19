@@ -29,10 +29,6 @@ public class MemberDAO {
 //        save(); // 테스트할때 처음 파일을 만들어야 되니깐 이부분 주석을 제거합니다. 충분히 데이터가 채워졌다면 주석으로 만들면 됩니다.
 
         load();
-
-        for (int i = 0; i < members.size(); i++) {
-            members.get(i).setRank(i + 1);
-        }
     }
 
     public static MemberDAO getInstance() {
@@ -75,10 +71,37 @@ public class MemberDAO {
                 return o2.getScore() - o1.getScore();
             }
         });
-        for (int i = 0; i < members.size(); i++) {
-            members.get(i).setRank(i + 1);
+        members.get(0).setRank(1);
+        for (int i = 1; i < members.size(); i++) {
+            if (members.get(i - 1).getScore() == members.get(i).getScore()) {
+                members.get(i).setRank(members.get(i - 1).getRank());
+            } else {
+                members.get(i).setRank(i + 1);
+            }
         }
         save();
+    }
+
+    private void load() {
+        ObjectInputStream objIn = null;
+        try {
+            objIn = new ObjectInputStream(new BufferedInputStream(new FileInputStream(
+                    "src/main/java/com/chickengame/mini/model/members.txt"
+            )));
+            while (true) {
+                members.add((MemberDTO) objIn.readObject());
+            }
+        } catch (EOFException e) {
+        } catch (IOException e) {
+        } catch (ClassNotFoundException e) {
+        } finally {
+            if (objIn != null) {
+                try {
+                    objIn.close();
+                } catch (IOException e) {
+                }
+            }
+        }
     }
 
     private void save() {
@@ -103,28 +126,6 @@ public class MemberDAO {
                     objOut.close();
                 } catch (IOException e) {
                     throw new RuntimeException(e);
-                }
-            }
-        }
-    }
-
-    private void load() {
-        ObjectInputStream objIn = null;
-        try {
-            objIn = new ObjectInputStream(new BufferedInputStream(new FileInputStream(
-                    "src/main/java/com/chickengame/mini/model/members.txt"
-            )));
-            while (true) {
-                members.add((MemberDTO) objIn.readObject());
-            }
-        } catch (EOFException e) {
-        } catch (IOException e) {
-        } catch (ClassNotFoundException e) {
-        } finally {
-            if (objIn != null) {
-                try {
-                    objIn.close();
-                } catch (IOException e) {
                 }
             }
         }
