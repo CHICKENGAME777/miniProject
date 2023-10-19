@@ -1,4 +1,4 @@
 package com.chickengame.mini.games;
 
-public class Game6 {
+public class Game6 implements Game{
 }
