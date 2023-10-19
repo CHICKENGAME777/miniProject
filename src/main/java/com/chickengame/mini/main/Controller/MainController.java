@@ -10,4 +10,4 @@ public class MainController {
 
 }
 
-// 수고하셨습니다 - 민하
+// 깃 커밋 푸시 확인 - 민하
