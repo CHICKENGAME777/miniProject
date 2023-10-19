@@ -5,11 +5,8 @@ public class MainController {
 
 
     public static void main(String[] args) {
-        System.out.println("수정2");
+        System.out.println("수정!");
     }
 
+        // 민하 수정수정수정
 }
-
-
-// 수고하셨습니다 - 민하
-
