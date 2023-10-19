@@ -4,19 +4,57 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06af2c85-9d57-4555-a26c-03cfb9347196" name="Changes" comment="깃 테스트 - 다희" />
+    <list default="true" id="08d71383-8974-48b8-a564-2594be02009a" name="Changes" comment="231019 4 이준경">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/Game.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="junkyeong" />
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="junkyeong" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 1
+  &quot;associatedIndex&quot;: 3
 }</component>
-  <component name="ProjectId" id="2WyKDv1gxXCg80ABVmSOHpnZCdi" />
+  <component name="ProjectId" id="2WvUJBAvcfFii8zxNGIINc6eEhL" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
@@ -25,6 +63,9 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "android.gradle.sync.needed": "true",
+    "git-widget-placeholder": "junkyeong",
+    "last_opened_file_path": "C:/dev/miniProject/src/main/java/com/chickengame/mini",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -32,16 +73,48 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\dev\miniProject\src\main\java\com\chickengame\mini" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="06af2c85-9d57-4555-a26c-03cfb9347196" name="Changes" comment="깃 테스트 - 다희" />
-      <created>1697699795808</created>
+      <changelist id="08d71383-8974-48b8-a564-2594be02009a" name="Changes" comment="" />
+      <created>1697612473106</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1697699795808</updated>
-      <workItem from="1697699797086" duration="121000" />
+      <updated>1697612473106</updated>
+      <workItem from="1697612474326" duration="2175000" />
+      <workItem from="1697683673312" duration="32000" />
+      <workItem from="1697696126730" duration="67000" />
     </task>
+    <task id="LOCAL-00001" summary="MainController 수정!!!">
+      <option name="closed" value="true" />
+      <created>1697614995760</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1697614995760</updated>
+    </task>
+    <task id="LOCAL-00002" summary="MainController 수정!!">
+      <option name="closed" value="true" />
+      <created>1697615103658</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1697615103658</updated>
+    </task>
+    <task id="LOCAL-00003" summary="231019 3 이준경">
+      <option name="closed" value="true" />
+      <created>1697681242125</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1697681242125</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -52,14 +125,29 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="junkyeong" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="깃 테스트 - 다희" />
-    <option name="LAST_COMMIT_MESSAGE" value="깃 테스트 - 다희" />
+    <MESSAGE value="MainController 수정!!!" />
+    <MESSAGE value="MainController 수정!!" />
+    <MESSAGE value="231019 2 junkyeong" />
+    <MESSAGE value="231019 3 이준경" />
+    <option name="LAST_COMMIT_MESSAGE" value="231019 3 이준경" />
   </component>
 </project>
