@@ -17,6 +17,7 @@ public class GameManager {
         games.add(new UpDownGame());
         games.add(new SlotMachine777());
         games.add(new Lotto());
+        games.add(new RSP());
         // ...
     }
     public void gameStart(){
@@ -27,6 +28,7 @@ public class GameManager {
             System.out.println("1. Updown Game");
             System.out.println("2. Slot Machine777");
             System.out.println("3. Lotto 번호 추천");
+            System.out.println("4. 가위바위보 게임");
             System.out.println("9. 메인 메뉴로 돌아가기");
             try {
                 System.out.print("메뉴: ");
