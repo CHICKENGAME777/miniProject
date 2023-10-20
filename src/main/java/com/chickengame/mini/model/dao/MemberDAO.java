@@ -1,4 +1,4 @@
-package com.chickengame.mini.model;
+package com.chickengame.mini.model.dao;
 
 import com.chickengame.mini.model.dto.MemberDTO;
 
