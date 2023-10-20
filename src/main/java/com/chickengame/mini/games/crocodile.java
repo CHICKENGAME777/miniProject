@@ -1,4 +1,8 @@
 package com.chickengame.mini.games;
 
-public class crocodile implements Game{
+public class crocodile implements Game {
+
+
+
+
 }
