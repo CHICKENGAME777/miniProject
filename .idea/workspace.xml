@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08d71383-8974-48b8-a564-2594be02009a" name="Changes" comment="이준경 2023년 10월 20일 오전 09시 44분">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/Service/MemberService.java" afterDir="false" />
+    <list default="true" id="08d71383-8974-48b8-a564-2594be02009a" name="Changes" comment="이준경 2023년 10월 20일 오전 11시 00분">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/model/dao/MemberDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/model/dao/MemberDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/Service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/Service/MemberService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/controller/GameManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/controller/GameManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/model/members.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +94,7 @@
       <workItem from="1697612474326" duration="2175000" />
       <workItem from="1697683673312" duration="32000" />
       <workItem from="1697696126730" duration="67000" />
-      <workItem from="1697761986639" duration="2208000" />
+      <workItem from="1697761986639" duration="4036000" />
     </task>
     <task id="LOCAL-00001" summary="MainController 수정!!!">
       <option name="closed" value="true" />
@@ -127,7 +128,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697762705160</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="이준경 2023년 10월 20일 오전 11시 00분">
+      <option name="closed" value="true" />
+      <created>1697767237930</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1697767237930</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,7 +172,8 @@
     <MESSAGE value="231019 3 이준경" />
     <MESSAGE value="깃 테스트 - 다희" />
     <MESSAGE value="이준경 2023년 10월 20일 오전 09시 44분" />
-    <option name="LAST_COMMIT_MESSAGE" value="이준경 2023년 10월 20일 오전 09시 44분" />
+    <MESSAGE value="이준경 2023년 10월 20일 오전 11시 00분" />
+    <option name="LAST_COMMIT_MESSAGE" value="이준경 2023년 10월 20일 오전 11시 00분" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -172,6 +182,15 @@
           <properties class="java.lang.StackOverflowError" package="java.lang" />
           <option name="timeStamp" value="4" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/chickengame/mini/run/Run.java</url>
+          <line>5</line>
+          <properties class="com.chickengame.mini.run.Run" method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

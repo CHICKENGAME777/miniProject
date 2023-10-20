@@ -7,9 +7,10 @@ import java.util.Comparator;
 import java.util.List;
 
 public class MemberService {
+    private MemberDAO memberDAO;
 
     public void addMember(MemberDTO memberDTO) {
-        MemberDAO memberDAO = MemberDAO.getInstance();
+        memberDAO = MemberDAO.getInstance();
         List<MemberDTO> members = memberDAO.getMembers();
         members.add(memberDTO);
         members.sort(new Comparator<>() {
@@ -29,7 +30,7 @@ public class MemberService {
     }
 
     public int containsMemberById(String memberId) {
-        MemberDAO memberDAO = MemberDAO.getInstance();
+        memberDAO = MemberDAO.getInstance();
         List<MemberDTO> members = memberDAO.getMembers();
         for (int i = 0; i < members.size(); i++) {
             if (members.get(i).getId().equals(memberId)) {
