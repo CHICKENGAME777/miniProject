@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08d71383-8974-48b8-a564-2594be02009a" name="Changes" comment="깃 테스트- 다희2">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_19_23__3_11PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_19_23__3_11PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_19_23__2_33PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_19_23__2_33PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="08d71383-8974-48b8-a564-2594be02009a" name="Changes" comment="23.10.20 게임하나 만듬 - 박다희">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/Game3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/Game3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/Game4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/Game4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/main/Controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/main/Controller/MainController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +107,7 @@
       <updated>1697612473106</updated>
       <workItem from="1697612474326" duration="2175000" />
       <workItem from="1697758298934" duration="4330000" />
-      <workItem from="1697778149911" duration="4149000" />
+      <workItem from="1697778149911" duration="4724000" />
     </task>
     <task id="LOCAL-00001" summary="MainController 수정!!!">
       <option name="closed" value="true" />
@@ -138,7 +133,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697702122203</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="23.10.20 게임하나 만듬 - 박다희">
+      <option name="closed" value="true" />
+      <created>1697790104388</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1697790104388</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,6 +167,7 @@
     <MESSAGE value="MainController 민하 수정 끝끝" />
     <MESSAGE value="MainController 민하 최종 진짜 끝" />
     <MESSAGE value="깃 테스트- 다희2" />
-    <option name="LAST_COMMIT_MESSAGE" value="깃 테스트- 다희2" />
+    <MESSAGE value="23.10.20 게임하나 만듬 - 박다희" />
+    <option name="LAST_COMMIT_MESSAGE" value="23.10.20 게임하나 만듬 - 박다희" />
   </component>
 </project>
