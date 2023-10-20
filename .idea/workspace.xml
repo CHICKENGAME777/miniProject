@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08d71383-8974-48b8-a564-2594be02009a" name="Changes" comment="이준경 2023년 10월 20일 오후 3시 33분" />
+    <list default="true" id="08d71383-8974-48b8-a564-2594be02009a" name="Changes" comment="이준경 2023년 10월 20일 오후 4시 16분" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -89,7 +89,7 @@
       <workItem from="1697612474326" duration="2175000" />
       <workItem from="1697683673312" duration="32000" />
       <workItem from="1697696126730" duration="67000" />
-      <workItem from="1697761986639" duration="6761000" />
+      <workItem from="1697761986639" duration="7999000" />
     </task>
     <task id="LOCAL-00001" summary="MainController 수정!!!">
       <option name="closed" value="true" />
@@ -171,7 +171,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697783593951</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="이준경 2023년 10월 20일 오후 4시 16분">
+      <option name="closed" value="true" />
+      <created>1697786191416</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1697786191416</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,6 +191,13 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="COLUMN_ID_WIDTH">
+                <map>
+                  <entry key="Table.Default.Author.ColumnIdWidth" value="35" />
+                  <entry key="Table.Default.Date.ColumnIdWidth" value="134" />
+                  <entry key="Table.Space.CommitStatus.ColumnIdWidth" value="134" />
+                </map>
+              </option>
               <option name="FILTERS">
                 <map>
                   <entry key="branch">
@@ -211,7 +226,8 @@
     <MESSAGE value="이준경 2023년 10월 20일 오전 11시 31분" />
     <MESSAGE value="이준경 2023년 10월 20일 오후 12시 36분" />
     <MESSAGE value="이준경 2023년 10월 20일 오후 3시 33분" />
-    <option name="LAST_COMMIT_MESSAGE" value="이준경 2023년 10월 20일 오후 3시 33분" />
+    <MESSAGE value="이준경 2023년 10월 20일 오후 4시 16분" />
+    <option name="LAST_COMMIT_MESSAGE" value="이준경 2023년 10월 20일 오후 4시 16분" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
