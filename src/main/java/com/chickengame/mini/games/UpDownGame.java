@@ -3,6 +3,7 @@ package com.chickengame.mini.games;
 import com.chickengame.mini.model.dao.MemberDAO;
 import com.chickengame.mini.model.dto.MemberDTO;
 
+import java.util.InputMismatchException;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -12,6 +13,7 @@ public class UpDownGame implements Game{
         // 작업 된 것
         // 1. 계정의 스코어 점수 게임과 연동
         // 2. Game Interface 구현
+        // 3. try catch로 문자열 입력했을 때 런타임에러 방지 처리
 
         // 작업해 줘야 할 것
         // 1. 내 계정의 스코어가 부족하면 게임을 더 할 수 없게
@@ -35,19 +37,24 @@ public class UpDownGame implements Game{
 
             for (int i = 1; i <= 3; i++) {
                 System.out.print("1 ~ 10 사이의 정수를 입력하세요 : ");
-                int userNum = sc.nextInt();
-
-                if (rNum > userNum) {
-                    System.out.println("UP! 더 높은 숫자입니다.");
-                    score -= 2;
-                } else if (rNum < userNum) {
-                    System.out.println("DOWN! 더 낮은 숫자입니다.");
-                    score -= 2;
-                } else {
-                    System.out.println("맞추셨습니다! " + i + "번 째 시도에 성공하여 " + reward + "점을 획득하셨습니다.");
-                    isSuccess = true;
-                    MemberDAO.getInstance().getMe().setScore(score+reward);
-                    break;
+                int userNum;
+                try {
+                    userNum = sc.nextInt();
+                    if (rNum > userNum) {
+                        System.out.println("UP! 더 높은 숫자입니다.");
+                        score -= 2;
+                    } else if (rNum < userNum) {
+                        System.out.println("DOWN! 더 낮은 숫자입니다.");
+                        score -= 2;
+                    } else {
+                        System.out.println("맞추셨습니다! " + i + "번 째 시도에 성공하여 " + reward + "점을 획득하셨습니다.");
+                        isSuccess = true;
+                        MemberDAO.getInstance().getMe().setScore(score + reward);
+                        break;
+                    }
+                }catch (InputMismatchException e){
+                    System.out.println("올바른 수를 입력해주세요.");
+                    i--;    //되려나..?
                 }
             }
 
