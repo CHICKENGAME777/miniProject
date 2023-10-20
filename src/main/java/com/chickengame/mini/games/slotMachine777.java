@@ -2,7 +2,6 @@ package com.chickengame.mini.games;
 
 import java.util.Scanner;
 
-import static java.lang.Math.random;
 public class slotMachine777 implements Game {
 
         public static void Game() {
