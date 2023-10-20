@@ -4,11 +4,9 @@ import java.util.Random;
 import java.util.Scanner;
 
 
-public class Game3 implements Game {
+public class RSP implements Game {
     // 가위바위보 다희
-    Game3 g = new Game3();
-
-    public static void main(String[] args) {
+    public void gameStart() {
         int score = 20;
 
         while (true) {
