@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08d71383-8974-48b8-a564-2594be02009a" name="Changes" comment="23.10.20 게임하나 만듬 - 박다희" />
+    <list default="true" id="08d71383-8974-48b8-a564-2594be02009a" name="Changes" comment="2023-10-20정지섭">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/SlotMachine777.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/SlotMachine777.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +21,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand />
@@ -27,30 +33,20 @@
       </state>
     </system>
   </component>
-  <component name="Git.Merge.Settings">
-    <option name="BRANCH" value="origin/main" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="Seopia" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;dev-dahee&quot;
-  }
-}</component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="selectedUrlAndAccountId">
-      <UrlAndAccount>
-        <option name="accountId" value="7438d2c3-203a-489a-a563-9031368b8852" />
-        <option name="url" value="https://github.com/CHICKENGAME777/miniProject.git" />
-      </UrlAndAccount>
-    </option>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -67,7 +63,9 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/dev/01_lectureSource/01_java/miniProject&quot;,
+    &quot;android.gradle.sync.needed&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/dev/clone/miniProject&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -75,25 +73,25 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\dev\miniProject\src\main\java\com\chickengame\mini" />
+    </key>
+  </component>
   <component name="RunManager">
-    <configuration name="MainController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.chickengame.mini.main.Controller.MainController" />
-      <module name="sampleProject.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.chickengame.mini.main.Controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="sampleProject" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.MainController" />
-      </list>
-    </recent_temporary>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="sampleProject" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -104,8 +102,7 @@
       <option name="presentableId" value="Default" />
       <updated>1697612473106</updated>
       <workItem from="1697612474326" duration="2175000" />
-      <workItem from="1697758298934" duration="4330000" />
-      <workItem from="1697778149911" duration="4724000" />
+      <workItem from="1697696162865" duration="83000" />
     </task>
     <task id="LOCAL-00001" summary="MainController 수정!!!">
       <option name="closed" value="true" />
@@ -123,23 +120,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697615103658</updated>
     </task>
-    <task id="LOCAL-00003" summary="깃 테스트- 다희2">
+    <task id="LOCAL-00003" summary="2023-10-20정지섭">
       <option name="closed" value="true" />
-      <created>1697702122203</created>
+      <created>1697791875437</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1697702122203</updated>
+      <updated>1697791875437</updated>
     </task>
-    <task id="LOCAL-00004" summary="23.10.20 게임하나 만듬 - 박다희">
-      <option name="closed" value="true" />
-      <created>1697790104388</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1697790104388</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,7 +139,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="junkyeong" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -159,13 +160,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="MainController 수정!!!" />
     <MESSAGE value="MainController 수정!!" />
-    <MESSAGE value="MainController 민하 수정 수정 수정" />
-    <MESSAGE value="Merge branch 'minha'&#10;&#10;# Conflicts:&#10;#&#9;src/main/java/com/chickengame/mini/main/Controller/MainController.java" />
-    <MESSAGE value="MainController 민하 수정 끝" />
-    <MESSAGE value="MainController 민하 수정 끝끝" />
-    <MESSAGE value="MainController 민하 최종 진짜 끝" />
-    <MESSAGE value="깃 테스트- 다희2" />
-    <MESSAGE value="23.10.20 게임하나 만듬 - 박다희" />
-    <option name="LAST_COMMIT_MESSAGE" value="23.10.20 게임하나 만듬 - 박다희" />
+    <MESSAGE value="2023-10-20정지섭" />
+    <option name="LAST_COMMIT_MESSAGE" value="2023-10-20정지섭" />
   </component>
 </project>
