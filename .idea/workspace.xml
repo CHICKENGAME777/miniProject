@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08d71383-8974-48b8-a564-2594be02009a" name="Changes" comment="2023-10-20정지섭">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/controller/GameManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/controller/GameManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/Game3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/RSP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/Game4.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/Game7.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/Game8.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/crocodile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/crocodile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/main/Controller/MainController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/model/members.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/model/members.txt" afterDir="false" />
+
+    <list default="true" id="08d71383-8974-48b8-a564-2594be02009a" name="Changes" comment="MainController 수정!!">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/view/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/view/MainMenu.java" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,9 +24,6 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
-        <task path="$PROJECT_DIR$">
-          <activation />
-        </task>
         <projects_view>
           <tree_state>
             <expand />
@@ -46,10 +40,13 @@
       </list>
     </option>
   </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="junkyeong" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Seopia" />
+        <entry key="$PROJECT_DIR$" value="junkyeong" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -64,40 +61,30 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;android.gradle.sync.needed&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/dev/clone/miniProject&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "android.gradle.sync.needed": "true",
+
+    "git-widget-placeholder": "junkyeong",
+    "last_opened_file_path": "C:/dev/miniProject/src/main/java/com/chickengame/mini",
+
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/dev/clone/miniProject",
+
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\dev\miniProject\src\main\java\com\chickengame\mini" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="sampleProject" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="sampleProject" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -108,7 +95,12 @@
       <option name="presentableId" value="Default" />
       <updated>1697612473106</updated>
       <workItem from="1697612474326" duration="2175000" />
+
+      <workItem from="1697683673312" duration="32000" />
+      <workItem from="1697696126730" duration="67000" />
+
       <workItem from="1697696162865" duration="83000" />
+
     </task>
     <task id="LOCAL-00001" summary="MainController 수정!!!">
       <option name="closed" value="true" />
@@ -126,13 +118,13 @@
       <option name="project" value="LOCAL" />
       <updated>1697615103658</updated>
     </task>
-    <task id="LOCAL-00003" summary="2023-10-20정지섭">
+    <task id="LOCAL-00003" summary="231019 3 이준경">
       <option name="closed" value="true" />
-      <created>1697791875437</created>
+      <created>1697681242125</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1697791875437</updated>
+      <updated>1697681242125</updated>
     </task>
     <option name="localTasksCounter" value="4" />
     <servers />
@@ -166,7 +158,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="MainController 수정!!!" />
     <MESSAGE value="MainController 수정!!" />
-    <MESSAGE value="2023-10-20정지섭" />
-    <option name="LAST_COMMIT_MESSAGE" value="2023-10-20정지섭" />
+    <MESSAGE value="231019 2 junkyeong" />
+    <MESSAGE value="231019 3 이준경" />
+    <option name="LAST_COMMIT_MESSAGE" value="231019 3 이준경" />
   </component>
 </project>
