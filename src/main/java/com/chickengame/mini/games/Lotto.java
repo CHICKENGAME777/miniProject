@@ -6,8 +6,8 @@ public class Lotto implements Game{
 
     /*           행운의 로또 번호            */
 
-    public static void main(String[] args) {
-
+    public void gameStart() {
+        // 스코어 소모 할 건가요??
         System.out.println();
         System.out.println("    ◠‿◠ 행운의 로또 번호 ◠‿◠ ");
         System.out.println();

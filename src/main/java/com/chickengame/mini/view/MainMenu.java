@@ -1,7 +1,9 @@
 package com.chickengame.mini.view;
 
 import com.chickengame.mini.controller.GameManager;
+import com.chickengame.mini.model.dao.MemberDAO;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class MainMenu {
@@ -18,25 +20,31 @@ public class MainMenu {
             System.out.println("4. 게임 시작");
             System.out.println("5. 게임 종료");
             System.out.print("메뉴: ");
-            int menu = sc.nextInt();
-            switch (menu) {
-                case 1:
-                    showRank();
-                    break;
-                case 2:
-                    showProfile();
-                    break;
-                case 3:
-                    updateProfile();
-                case 4:
-                    gameStart();
-                    break;
-                case 5:
-                    System.out.println("게임을 종료합니다.");
-                    return;
-                default:
-                    System.out.println("잘못 입력했습니다. 다시 입력하세요.");
-                    break;
+            try {
+                int menu = sc.nextInt();
+                switch (menu) {
+                    case 1:
+                        showRank();
+                        break;
+                    case 2:
+                        showProfile();
+                        break;
+                    case 3:
+                        updateProfile();
+                        break;
+                    case 4:
+                        gameStart();
+                        break;
+                    case 5:
+                        System.out.println("게임을 종료합니다.");
+                        return;
+                    default:
+                        System.out.println("잘못 입력했습니다. 다시 입력하세요.");
+                        break;
+                }
+            }catch (InputMismatchException e){
+                System.out.println("숫자로 입력해주세요.");
+                sc.nextLine();
             }
         }
     }
@@ -54,6 +62,6 @@ public class MainMenu {
     }
 
     private void gameStart() {
-//        gameManager.gameStart();
+        gameManager.gameStart();
     }
 }

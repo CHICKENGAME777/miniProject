@@ -1,9 +1,10 @@
 package com.chickengame.mini.view;
 
-import com.chickengame.mini.model.MemberDAO;
+import com.chickengame.mini.model.dao.MemberDAO;
 import com.chickengame.mini.model.dto.MemberDTO;
 
-import java.util.Comparator;
+import java.time.LocalDate;
+import java.time.LocalTime;
 import java.util.List;
 import java.util.Scanner;
 
@@ -37,6 +38,8 @@ public class MenuManager {
     }
 
     public boolean register() {
+        String date = String.valueOf(LocalDate.now());
+        String time = String.valueOf(LocalTime.now().withNano(0));
         System.out.println("== 회원가입을 시작합니다 ==");
         System.out.print("아이디: ");
         String id = sc.nextLine();
@@ -44,7 +47,7 @@ public class MenuManager {
         if (index < 0) {
             System.out.print("이름: ");
             String name = sc.nextLine();
-            MemberDTO me = new MemberDTO(id, name);
+            MemberDTO me = new MemberDTO(id, name, date+"  "+time);
             MemberDAO.getInstance().addMember(me);
             MemberDAO.getInstance().setMe(me);
             System.out.println("회원가입을 환영합니다.");

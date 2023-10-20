@@ -1,4 +1,4 @@
-package com.chickengame.mini.model;
+package com.chickengame.mini.model.dao;
 
 import com.chickengame.mini.model.dto.MemberDTO;
 
@@ -82,7 +82,7 @@ public class MemberDAO {
         save();
     }
 
-    private void load() {
+    public void load() {
         ObjectInputStream objIn = null;
         try {
             objIn = new ObjectInputStream(new BufferedInputStream(new FileInputStream(
@@ -104,7 +104,7 @@ public class MemberDAO {
         }
     }
 
-    private void save() {
+    public void save() {
         ObjectOutputStream objOut = null;
 
         try {
@@ -119,6 +119,7 @@ public class MemberDAO {
                 objOut.writeObject(members.get(i));
             }
             objOut.flush();
+            System.out.println("성공적으로 저장되었습니다.");
         } catch (IOException e) {
         } finally {
             if (objOut != null) {
