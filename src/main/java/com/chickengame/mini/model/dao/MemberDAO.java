@@ -1,5 +1,6 @@
 package com.chickengame.mini.model.dao;
 
+import com.chickengame.mini.Service.MemberService;
 import com.chickengame.mini.model.dto.MemberDTO;
 
 import java.io.*;
@@ -8,11 +9,13 @@ import java.util.Comparator;
 import java.util.List;
 
 public class MemberDAO {
+    private MemberService memberService;
     private static MemberDAO instance;
     private List<MemberDTO> members;
     private MemberDTO me;
 
     private MemberDAO() {
+        memberService = new MemberService();
         members = new ArrayList<>();
         me = new MemberDTO();
 
@@ -39,12 +42,7 @@ public class MemberDAO {
     }
 
     public int containsMemberById(String memberId) {
-        for (int i = 0; i < members.size(); i++) {
-            if (members.get(i).getId().equals(memberId)) {
-                return i;
-            }
-        }
-        return -1;
+        return memberService.containsMemberById(memberId);
     }
 
     public void setMe(int index) {
@@ -64,21 +62,7 @@ public class MemberDAO {
     }
 
     public void addMember(MemberDTO memberDTO) {
-        members.add(memberDTO);
-        members.sort(new Comparator<>() {
-            @Override
-            public int compare(MemberDTO o1, MemberDTO o2) {
-                return o2.getScore() - o1.getScore();
-            }
-        });
-        members.get(0).setRank(1);
-        for (int i = 1; i < members.size(); i++) {
-            if (members.get(i - 1).getScore() == members.get(i).getScore()) {
-                members.get(i).setRank(members.get(i - 1).getRank());
-            } else {
-                members.get(i).setRank(i + 1);
-            }
-        }
+        memberService.addMember(memberDTO);
         save();
     }
 
