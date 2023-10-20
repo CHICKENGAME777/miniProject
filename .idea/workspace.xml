@@ -5,12 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08d71383-8974-48b8-a564-2594be02009a" name="Changes" comment="MainController 수정!!">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/controller/GameManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/controller/GameManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/UpDownGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/UpDownGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/view/LoginMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/view/LoginMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/model/dao/MemberDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/model/dao/MemberDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/model/dto/MemberDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/model/dto/MemberDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/model/members.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/run/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/run/Run.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/view/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/view/MainMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/view/MenuManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/view/MenuManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,9 +67,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "android.gradle.sync.needed": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/dev/miniProject",
+    "last_opened_file_path": "C:/dev/realclone/miniProject",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -90,6 +92,7 @@
       <workItem from="1697612474326" duration="2175000" />
       <workItem from="1697696162865" duration="83000" />
       <workItem from="1697781061560" duration="136000" />
+      <workItem from="1697785563181" duration="2614000" />
     </task>
     <task id="LOCAL-00001" summary="MainController 수정!!!">
       <option name="closed" value="true" />

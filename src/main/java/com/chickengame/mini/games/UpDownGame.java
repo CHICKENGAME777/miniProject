@@ -29,7 +29,7 @@ public class UpDownGame implements Game{
         Scanner sc = new Scanner(System.in);
         boolean isSuccess = false;
         int score = MemberDAO.getInstance().getMe().getScore(); // 내 계정의 스코어를 뜻함
-        int reward = 10;        //보상으로 주는 스코어를 뜻함
+        int[] reward = {1,3,5};        //보상으로 주는 스코어를 뜻함
 
         while (true) {
             int rNum = r.nextInt(10) + 1;
@@ -47,14 +47,15 @@ public class UpDownGame implements Game{
                         System.out.println("DOWN! 더 낮은 숫자입니다.");
                         score -= 2;
                     } else {
-                        System.out.println("맞추셨습니다! " + i + "번 째 시도에 성공하여 " + reward + "점을 획득하셨습니다.");
+                        System.out.println("맞추셨습니다! " + i + "번 째 시도에 성공하여 " + reward[i-1] + "점을 획득하셨습니다.");
                         isSuccess = true;
-                        MemberDAO.getInstance().getMe().setScore(score + reward);
+                        MemberDAO.getInstance().getMe().setScore(score + reward[i-1]);
                         break;
                     }
                 }catch (InputMismatchException e){
                     System.out.println("올바른 수를 입력해주세요.");
-                    i--;    //되려나..?
+                    sc.nextLine();
+                    i--;
                 }
             }
 
