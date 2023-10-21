@@ -62,6 +62,11 @@ public class MemberDAO {
     public MemberDTO getMe() {
         return me;
     }
+    public void deleteMe(){
+        members.remove(me);
+        me = null;
+        save();
+    }
 
     public void addMember(MemberDTO memberDTO) {
         members.add(memberDTO);

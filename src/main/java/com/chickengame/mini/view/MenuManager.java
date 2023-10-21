@@ -3,8 +3,6 @@ package com.chickengame.mini.view;
 import com.chickengame.mini.model.dao.MemberDAO;
 import com.chickengame.mini.model.dto.MemberDTO;
 
-import java.time.LocalDate;
-import java.time.LocalTime;
 import java.util.List;
 import java.util.Scanner;
 
@@ -38,8 +36,6 @@ public class MenuManager {
     }
 
     public boolean register() {
-        String date = String.valueOf(LocalDate.now());
-        String time = String.valueOf(LocalTime.now().withNano(0));
         System.out.println("== 회원가입을 시작합니다 ==");
         System.out.print("아이디: ");
         String id = sc.nextLine();
@@ -47,7 +43,7 @@ public class MenuManager {
         if (index < 0) {
             System.out.print("이름: ");
             String name = sc.nextLine();
-            MemberDTO me = new MemberDTO(id, name, date+"  "+time);
+            MemberDTO me = new MemberDTO(id, name);
             MemberDAO.getInstance().addMember(me);
             MemberDAO.getInstance().setMe(me);
             System.out.println("회원가입을 환영합니다.");
@@ -72,12 +68,13 @@ public class MenuManager {
         System.out.println(me);
     }
 
-    public void updateProfile() {
+    public int updateProfile() {
         MemberDTO me = MemberDAO.getInstance().getMe();
         while (true) {
             System.out.println("내 프로필을 수정합니다.");
             System.out.println("1. 이름 수정");
-            System.out.println("2. 이전 메뉴로 나가기");
+            System.out.println("2. 계정 삭제");
+            System.out.println("9. 이전 메뉴로 나가기");
             System.out.print("메뉴: ");
             int menu = sc.nextInt();
             switch (menu) {
@@ -87,10 +84,24 @@ public class MenuManager {
                     String name = sc.nextLine();
                     me.setName(name);
                     System.out.println("변경이 완료됐습니다.");
-                    return;
+                    return 0;
                 case 2:
+                    System.out.println("정말로 삭제하시겠습니까? (Y, N) : ");
+                    sc.nextLine();
+                    String delete = sc.nextLine();
+                    if (delete.equalsIgnoreCase("Y")) {
+                        MemberDAO.getInstance().deleteMe();
+                        System.out.println("삭제를 완료했습니다. 게임을 종료합니다.");
+                        return 1; // 게임을 종료하는 케이스
+                    } else if (delete.equalsIgnoreCase("N")) {
+                        System.out.println("메인 메뉴로 나갑니다.");
+                    } else {
+                        System.out.println("잘못 입력했습니다. 메인메뉴로 나갑니다.");
+                    }
+                    return 0;
+                case 9:
                     System.out.println("이전 메뉴로 나갑니다.");
-                    return;
+                    return 0;
                 default:
                     System.out.println("잘못 입력했습니다. 다시 입력해주세요.");
                     break;
