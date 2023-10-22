@@ -1,15 +1,19 @@
 package com.chickengame.mini.view;
 
 import com.chickengame.mini.controller.GameManager;
-import com.chickengame.mini.model.dao.MemberDAO;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class MainMenu {
-    private GameManager gameManager = new GameManager();
+    private GameManager gameManager;
 
-    private Scanner sc = new Scanner(System.in);
+    private Scanner sc;
+
+    public MainMenu() {
+        gameManager = new GameManager();
+        sc = new Scanner(System.in);
+    }
 
     public void run() {
         while (true) {
@@ -18,7 +22,7 @@ public class MainMenu {
             System.out.println("2. 내 정보 출력");
             System.out.println("3. 내 정보 수정");
             System.out.println("4. 게임 시작");
-            System.out.println("5. 게임 종료");
+            System.out.println("9. 게임 종료");
             System.out.print("메뉴: ");
             try {
                 int menu = sc.nextInt();
@@ -30,12 +34,14 @@ public class MainMenu {
                         showProfile();
                         break;
                     case 3:
-                        updateProfile();
+                        int cases = updateProfile();
+                        if(cases == 1)
+                            return;
                         break;
                     case 4:
                         gameStart();
                         break;
-                    case 5:
+                    case 9:
                         System.out.println("게임을 종료합니다.");
                         return;
                     default:
@@ -57,8 +63,13 @@ public class MainMenu {
         MenuManager.getInstance().showProfile();
     }
 
-    private void updateProfile() {
-        MenuManager.getInstance().updateProfile();
+    private int updateProfile() {
+        int cases = MenuManager.getInstance().updateProfile();
+        if(cases == 1)
+        {
+            return 1; // 게임을 아예 종료하는 케이스
+        }
+        return 0;
     }
 
     private void gameStart() {

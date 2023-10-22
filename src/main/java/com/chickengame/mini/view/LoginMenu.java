@@ -4,8 +4,12 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class LoginMenu {
-    private Scanner sc = new Scanner(System.in);
+    private Scanner sc;
     private boolean isLogin;
+
+    public LoginMenu() {
+        sc = new Scanner(System.in);
+    }
 
     public void run() {
         while (true) {
@@ -35,7 +39,7 @@ public class LoginMenu {
                     System.out.println("로그인에 성공했습니다.");
                     break;
                 }
-            }catch (InputMismatchException e){
+            } catch (InputMismatchException e) {
                 System.out.println("숫자로 입력해주세요.");
                 sc.nextLine();
             }
