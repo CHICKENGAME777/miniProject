@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08d71383-8974-48b8-a564-2594be02009a" name="Changes" comment="workspace.xml 수정사안 commit&#10;- 이준경 -&#10;23년 10월 21일 오후 12시 13분">
+    <list default="true" id="08d71383-8974-48b8-a564-2594be02009a" name="Changes" comment="[commit and push]&#10;- GameManager &#10;필드 초기화 기본생성자로 이동&#10;- MainMenu&#10;게임 종료 숫자 변경&#10;updateProfile 메서드가 숫자를 반환하여 완전히 종료가능하게 변경&#10;- MemberDAO&#10;삭제기능 추가&#10;- MemberDTO&#10;회원 가입때 registDate 부분을 이곳에서 처리하도록 이동&#10;안쓰는 getter, setter, add, reset, equals, hashcode 삭제&#10;toString 메소드 오타 변경&#10;- MenuManager&#10;날짜와 시간 이동&#10;MemberDTO 생성자 수정으로 인한 수정&#10;삭제하는 경우 추가&#10;&#10;[이준경]&#10;23년 10월 21일 오후 13시 17분">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/controller/GameManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/controller/GameManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/model/dao/MemberDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/model/dao/MemberDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/model/dto/MemberDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/model/dto/MemberDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/model/members.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/model/members.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/view/LoginMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/view/LoginMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/view/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/view/MainMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/view/MenuManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/view/MenuManager.java" afterDir="false" />
     </list>
@@ -113,7 +110,7 @@
       <updated>1697612473106</updated>
       <workItem from="1697612474326" duration="2175000" />
       <workItem from="1697696162865" duration="83000" />
-      <workItem from="1697857996113" duration="3826000" />
+      <workItem from="1697857996113" duration="5985000" />
     </task>
     <task id="LOCAL-00001" summary="MainController 수정!!!">
       <option name="closed" value="true" />
@@ -147,7 +144,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697858073873</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="[commit and push]&#10;- GameManager &#10;필드 초기화 기본생성자로 이동&#10;- MainMenu&#10;게임 종료 숫자 변경&#10;updateProfile 메서드가 숫자를 반환하여 완전히 종료가능하게 변경&#10;- MemberDAO&#10;삭제기능 추가&#10;- MemberDTO&#10;회원 가입때 registDate 부분을 이곳에서 처리하도록 이동&#10;안쓰는 getter, setter, add, reset, equals, hashcode 삭제&#10;toString 메소드 오타 변경&#10;- MenuManager&#10;날짜와 시간 이동&#10;MemberDTO 생성자 수정으로 인한 수정&#10;삭제하는 경우 추가&#10;&#10;[이준경]&#10;23년 10월 21일 오후 13시 17분">
+      <option name="closed" value="true" />
+      <created>1697862204525</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1697862204525</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,6 +186,7 @@
     <MESSAGE value="MainController 수정!!" />
     <MESSAGE value="2023-10-20정지섭" />
     <MESSAGE value="workspace.xml 수정사안 commit&#10;- 이준경 -&#10;23년 10월 21일 오후 12시 13분" />
-    <option name="LAST_COMMIT_MESSAGE" value="workspace.xml 수정사안 commit&#10;- 이준경 -&#10;23년 10월 21일 오후 12시 13분" />
+    <MESSAGE value="[commit and push]&#10;- GameManager &#10;필드 초기화 기본생성자로 이동&#10;- MainMenu&#10;게임 종료 숫자 변경&#10;updateProfile 메서드가 숫자를 반환하여 완전히 종료가능하게 변경&#10;- MemberDAO&#10;삭제기능 추가&#10;- MemberDTO&#10;회원 가입때 registDate 부분을 이곳에서 처리하도록 이동&#10;안쓰는 getter, setter, add, reset, equals, hashcode 삭제&#10;toString 메소드 오타 변경&#10;- MenuManager&#10;날짜와 시간 이동&#10;MemberDTO 생성자 수정으로 인한 수정&#10;삭제하는 경우 추가&#10;&#10;[이준경]&#10;23년 10월 21일 오후 13시 17분" />
+    <option name="LAST_COMMIT_MESSAGE" value="[commit and push]&#10;- GameManager &#10;필드 초기화 기본생성자로 이동&#10;- MainMenu&#10;게임 종료 숫자 변경&#10;updateProfile 메서드가 숫자를 반환하여 완전히 종료가능하게 변경&#10;- MemberDAO&#10;삭제기능 추가&#10;- MemberDTO&#10;회원 가입때 registDate 부분을 이곳에서 처리하도록 이동&#10;안쓰는 getter, setter, add, reset, equals, hashcode 삭제&#10;toString 메소드 오타 변경&#10;- MenuManager&#10;날짜와 시간 이동&#10;MemberDTO 생성자 수정으로 인한 수정&#10;삭제하는 경우 추가&#10;&#10;[이준경]&#10;23년 10월 21일 오후 13시 17분" />
   </component>
 </project>

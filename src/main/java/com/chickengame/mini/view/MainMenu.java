@@ -6,9 +6,14 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class MainMenu {
-    private GameManager gameManager = new GameManager();
+    private GameManager gameManager;
 
-    private Scanner sc = new Scanner(System.in);
+    private Scanner sc;
+
+    public MainMenu() {
+        gameManager = new GameManager();
+        sc = new Scanner(System.in);
+    }
 
     public void run() {
         while (true) {

@@ -8,9 +8,10 @@ import java.util.Scanner;
 
 public class MenuManager {
     private static MenuManager instance;
-    private Scanner sc = new Scanner(System.in);
+    private Scanner sc;
 
     private MenuManager() {
+        sc = new Scanner(System.in);
     }
 
     public static MenuManager getInstance() {
