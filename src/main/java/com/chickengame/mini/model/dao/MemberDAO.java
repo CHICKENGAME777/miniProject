@@ -62,14 +62,7 @@ public class MemberDAO {
     public MemberDTO getMe() {
         return me;
     }
-    public void deleteMe(){
-        members.remove(me);
-        me = null;
-        save();
-    }
-
-    public void addMember(MemberDTO memberDTO) {
-        members.add(memberDTO);
+    public void sortScoreDESC() {
         members.sort(new Comparator<>() {
             @Override
             public int compare(MemberDTO o1, MemberDTO o2) {
@@ -84,6 +77,19 @@ public class MemberDAO {
                 members.get(i).setRank(i + 1);
             }
         }
+    }
+
+    public void deleteMe() {
+        members.remove(me);
+        me = null;
+        sortScoreDESC();
+        save();
+    }
+
+
+    public void addMember(MemberDTO memberDTO) {
+        members.add(memberDTO);
+        sortScoreDESC();
         save();
     }
 

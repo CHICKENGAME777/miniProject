@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08d71383-8974-48b8-a564-2594be02009a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/SleepyCrocodile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/run/test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/controller/GameManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/controller/GameManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/RPG.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/RPG.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/crocodile.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/model/members.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/model/members.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/view/MenuManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/view/MenuManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/model/dao/MemberDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/model/dao/MemberDAO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +46,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Seopia" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -67,21 +61,21 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;android.gradle.sync.needed&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/dev/miniProject&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "android.gradle.sync.needed": "true",
+    "git-widget-placeholder": "junkyeong",
+    "last_opened_file_path": "C:/dev/miniProject",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\dev\miniProject\src\main\java\com\chickengame\mini" />
@@ -116,6 +110,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="애플리케이션.test" />
+        <item itemvalue="애플리케이션.test" />
+        <item itemvalue="애플리케이션.test" />
+        <item itemvalue="애플리케이션.test" />
         <item itemvalue="애플리케이션.test" />
       </list>
     </recent_temporary>
