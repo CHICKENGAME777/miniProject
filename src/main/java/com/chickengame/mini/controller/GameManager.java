@@ -20,18 +20,23 @@ public class GameManager {
         games.add(new SlotMachine777());
         games.add(new Lotto());
         games.add(new RSP());
+        games.add(new SleepyCrocodile());
+        games.add(new RPG());
         // ...
     }
 
     public void gameStart() {
 
         while (true) {
+            System.out.println();
             System.out.println(MemberDAO.getInstance().getMe().getName() + " 님! 게임을 선택해주세요.");
             System.out.println(MemberDAO.getInstance().getMe().getName() + " 님의 현재 마일리지 : " + MemberDAO.getInstance().getMe().getScore());
             System.out.println("1. Updown Game");
             System.out.println("2. Slot Machine777");
             System.out.println("3. Lotto 번호 추천");
             System.out.println("4. 가위바위보 게임");
+            System.out.println("5. 잠자는 악어의 이빨 누르기");
+            System.out.println("6. 미니 RPG");
             // ...
             System.out.println("9. 메인 메뉴로 돌아가기");
             try {

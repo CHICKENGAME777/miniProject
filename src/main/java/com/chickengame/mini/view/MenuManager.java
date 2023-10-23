@@ -87,7 +87,7 @@ public class MenuManager {
                     System.out.println("변경이 완료됐습니다.");
                     return 0;
                 case 2:
-                    System.out.println("정말로 삭제하시겠습니까? (Y, N) : ");
+                    System.out.print("정말로 삭제하시겠습니까? (Y, N) : ");
                     sc.nextLine();
                     String delete = sc.nextLine();
                     if (delete.equalsIgnoreCase("Y")) {

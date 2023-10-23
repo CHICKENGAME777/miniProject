@@ -2,8 +2,9 @@ package com.chickengame.mini.games;
 
 import java.util.Scanner;
 
-public class RPG {
-    public static void main(String[] args) {
+public class RPG implements Game {
+    @Override
+    public void gameStart() {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("-------------- RPG 게임 --------------");
