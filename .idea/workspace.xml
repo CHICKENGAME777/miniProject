@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08d71383-8974-48b8-a564-2594be02009a" name="Changes" comment="[commit]&#10;workspace.xml 수정&#10;&#10;이준경&#10;23년 10월 23일 오전 11시 11분">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/controller/GameManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/controller/GameManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/RPG.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/RPG.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/SleepyCrocodile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/SleepyCrocodile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/SlotMachine777.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/SlotMachine777.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/UpDownGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/UpDownGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/model/dao/MemberDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/model/dao/MemberDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/model/members.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/model/members.txt" afterDir="false" />
-    </list>
+    <list default="true" id="08d71383-8974-48b8-a564-2594be02009a" name="Changes" comment="[commit and push]&#10;final&#10;&#10;23년 10월 23일 오후 6시 11분" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -183,7 +174,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698047437680</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="[commit and push]&#10;final&#10;&#10;23년 10월 23일 오후 6시 11분">
+      <option name="closed" value="true" />
+      <created>1698052321587</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1698052321587</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,7 +217,8 @@
     <MESSAGE value="2023-10-20정지섭" />
     <MESSAGE value="김수연" />
     <MESSAGE value="[commit]&#10;workspace.xml 수정&#10;&#10;이준경&#10;23년 10월 23일 오전 11시 11분" />
-    <option name="LAST_COMMIT_MESSAGE" value="[commit]&#10;workspace.xml 수정&#10;&#10;이준경&#10;23년 10월 23일 오전 11시 11분" />
+    <MESSAGE value="[commit and push]&#10;final&#10;&#10;23년 10월 23일 오후 6시 11분" />
+    <option name="LAST_COMMIT_MESSAGE" value="[commit and push]&#10;final&#10;&#10;23년 10월 23일 오후 6시 11분" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
