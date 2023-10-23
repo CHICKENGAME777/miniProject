@@ -90,6 +90,7 @@ public class SleepyCrocodile implements Game {
                             System.out.println("  악어가 깨어났습니다. 도망치세요!");
                             System.out.println("\u001B[33m   총 누적 점수는 " + score + "점 입니다.\n");
                             MemberDAO.getInstance().getMe().setScore(mile+score);
+                            System.out.print("\u001B[0m");
                             return;
                         }
 

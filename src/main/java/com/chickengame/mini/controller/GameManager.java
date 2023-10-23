@@ -47,7 +47,7 @@ public class GameManager {
                     MemberDAO.getInstance().save();
                     return;
                 }
-                if (games.size() < num) {
+                if (games.size() < num || num <= 0) {
                     System.out.println("다시 입력해주세요.");
                 } else {
                     games.get(num - 1).gameStart();

@@ -37,7 +37,6 @@ public class UpDownGame implements Game{
                 break;
             }
             int rNum = r.nextInt(10) + 1;
-            System.out.println(rNum);
 
             for (int i = 1; i <= 3; i++) {
                 System.out.print("1 ~ 10 사이의 정수를 입력하세요 : ");

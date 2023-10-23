@@ -28,7 +28,6 @@ public class SlotMachine777 implements Game {
         int correct = 50;           // 당첨되면 주는 마일리지
 
         Scanner sc = new Scanner(System.in);
-        System.out.println(score);
         System.out.printf("%55s", "\u001B[33m=============\n");
 
         System.out.printf("%53s", "\u001B[33m| 슬롯머신777 |\n");
