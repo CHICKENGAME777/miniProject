@@ -51,6 +51,7 @@ public class GameManager {
                     System.out.println("다시 입력해주세요.");
                 } else {
                     games.get(num - 1).gameStart();
+                    MemberDAO.getInstance().sortScoreDESC();
                 }
             } catch (InputMismatchException e) {
                 System.out.println("숫자로 입력해주세요.");

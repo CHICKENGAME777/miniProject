@@ -1,10 +1,13 @@
 package com.chickengame.mini.games;
 
+import com.chickengame.mini.model.dao.MemberDAO;
+
 import java.util.Scanner;
 
 public class RPG implements Game {
     @Override
     public void gameStart() {
+        int score = MemberDAO.getInstance().getMe().getScore();
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("-------------- RPG 게임 --------------");
@@ -57,6 +60,7 @@ public class RPG implements Game {
                     }
                 } else {
                     System.out.println("전투에서 패배했습니다. 게임 종료.");
+                    MemberDAO.getInstance().getMe().setScore((experience/10)+score);
                     break;
                 }
             } else if (choice == 2) {
@@ -65,6 +69,7 @@ public class RPG implements Game {
                 System.out.println("현재 체력은 " + playerHealth + "입니다.");
             } else if (choice == 3) {
                 System.out.println("게임을 종료합니다.");
+                MemberDAO.getInstance().getMe().setScore((experience/10)+score);
                 break;
             } else {
                 System.out.println("잘못된 선택입니다. 다시 선택하세요.");

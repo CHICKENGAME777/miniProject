@@ -8,7 +8,8 @@ public class SleepyCrocodile implements Game {
     @Override
     public void gameStart() {
         Scanner sc = new Scanner(System.in);
-
+        int mile = MemberDAO.getInstance().getMe().getScore();
+        System.out.printf("\n%25s", "당신의 현재 스코어 : "+mile+"점");
         System.out.printf("\n%25s", "┌───────────────────┐");
         System.out.printf("\n%25s", "|  SleepyCrocodile  |");
         System.out.printf("\n%26s", "└───────────────────┘\n");
@@ -88,6 +89,7 @@ public class SleepyCrocodile implements Game {
                             System.out.print("\u001B[0m");
                             System.out.println("  악어가 깨어났습니다. 도망치세요!");
                             System.out.println("\u001B[33m   총 누적 점수는 " + score + "점 입니다.\n");
+                            MemberDAO.getInstance().getMe().setScore(mile+score);
                             return;
                         }
 
@@ -98,6 +100,7 @@ public class SleepyCrocodile implements Game {
                         if (score == 19) {
                             System.out.println("\u001B[31m악어의 아픈 이빨을 피해 이빨 누르기 성공!");
                             System.out.print("\u001B[0m");
+                            MemberDAO.getInstance().getMe().setScore(mile+score);
                             break;
                         }
                     }

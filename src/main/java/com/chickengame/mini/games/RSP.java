@@ -1,5 +1,7 @@
 package com.chickengame.mini.games;
 
+import com.chickengame.mini.model.dao.MemberDAO;
+
 import java.util.Random;
 import java.util.Scanner;
 
@@ -7,13 +9,14 @@ import java.util.Scanner;
 public class RSP implements Game {
     // 가위바위보 다희
     public void gameStart() {
-        int score = 20;
+        int score = MemberDAO.getInstance().getMe().getScore();
 
         while (true) {
 
             // 사용자 입력 받기
             Scanner sc = new Scanner(System.in);
             System.out.println("-------------- 가위바위보게임 --------------");
+            System.out.println("-------------- 현재 스코어: "+score+"점-----------");
             System.out.println("(1)가위 (2)바위 (3)보 (4)종료");
             System.out.print("숫자입력 : ");
             int userChoice = sc.nextInt();
@@ -23,6 +26,7 @@ public class RSP implements Game {
             int computerChoice = random.nextInt(3) + 1;
             if (userChoice == 4) {
                 System.out.println("게임을 종료합니다!!");
+                MemberDAO.getInstance().getMe().setScore(score);
                 break;
             } else if (userChoice > 4) {
                 System.out.println("1~4까지만 입력해주세요!");
@@ -40,10 +44,10 @@ public class RSP implements Game {
                 System.out.println("무승부");
             } else if (choice == -1 || choice == 2) {
                 score = score - 2;
-                System.out.println("패배");
+                System.out.println("패배 스코어 - 2");
             } else {
                 score = score + 3;
-                System.out.println("승리");
+                System.out.println("승리 스코어 + 3");
             }
 
             // 숫자를 문자열로 수정
@@ -59,7 +63,7 @@ public class RSP implements Game {
             case 3:
                 return "보";
         }
-        return "";
+        return "Error";
     }
 
 }
