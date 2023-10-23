@@ -28,7 +28,7 @@ public class MemberDAO {
 //        members.add(new MemberDTO(13, "아이디10", "이름10", 5));
 //        save(); // 테스트할때 처음 파일을 만들어야 되니깐 이부분 주석을 제거합니다. 충분히 데이터가 채워졌다면 주석으로 만들면 됩니다.
 
-        load();
+        load(); //생성자 호출하면서 load() 부름
     }
 
     public static MemberDAO getInstance() {
@@ -62,9 +62,7 @@ public class MemberDAO {
     public MemberDTO getMe() {
         return me;
     }
-
-    public void addMember(MemberDTO memberDTO) {
-        members.add(memberDTO);
+    public void sortScoreDESC() {
         members.sort(new Comparator<>() {
             @Override
             public int compare(MemberDTO o1, MemberDTO o2) {
@@ -79,6 +77,19 @@ public class MemberDAO {
                 members.get(i).setRank(i + 1);
             }
         }
+    }
+
+    public void deleteMe() {
+        members.remove(me);
+        me = null;
+        sortScoreDESC();
+        save();
+    }
+
+
+    public void addMember(MemberDTO memberDTO) {
+        members.add(memberDTO);
+        sortScoreDESC();
         save();
     }
 
@@ -86,15 +97,22 @@ public class MemberDAO {
         ObjectInputStream objIn = null;
         try {
             objIn = new ObjectInputStream(new BufferedInputStream(new FileInputStream(
-                    "src/main/java/com/chickengame/mini/model/members.txt"
+                    "src/main/java/com/chickengame/mini/model/members"
             )));
             while (true) {
                 members.add((MemberDTO) objIn.readObject());
             }
         } catch (EOFException e) {
+            System.out.println("a");
         } catch (IOException e) {
+            System.out.println("s");
         } catch (ClassNotFoundException e) {
-        } finally {
+            System.out.println("s");
+
+        } catch (Exception e){
+            System.out.println("??");
+        }
+        finally {
             if (objIn != null) {
                 try {
                     objIn.close();
@@ -111,7 +129,7 @@ public class MemberDAO {
             objOut = new ObjectOutputStream(
                     new BufferedOutputStream(
                             new FileOutputStream(
-                                    "src/main/java/com/chickengame/mini/model/members.txt"
+                                    "src/main/java/com/chickengame/mini/model/members"
                             )
                     )
             );

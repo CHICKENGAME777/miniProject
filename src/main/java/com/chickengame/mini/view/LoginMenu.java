@@ -4,12 +4,16 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class LoginMenu {
-    private Scanner sc = new Scanner(System.in);
-    private boolean isLogin;
+    private Scanner sc;
+    private boolean isLogin;    //로그인 되어 있는지 확인
+
+    public LoginMenu() {
+        sc = new Scanner(System.in);
+    }
 
     public void run() {
         while (true) {
-            isLogin = false;
+            isLogin = false;    //로그인 false
             System.out.println("로그인 화면 입니다.");
             System.out.println("1. 로그인");
             System.out.println("2. 회원가입");
@@ -35,7 +39,7 @@ public class LoginMenu {
                     System.out.println("로그인에 성공했습니다.");
                     break;
                 }
-            }catch (InputMismatchException e){
+            } catch (InputMismatchException e) {
                 System.out.println("숫자로 입력해주세요.");
                 sc.nextLine();
             }
