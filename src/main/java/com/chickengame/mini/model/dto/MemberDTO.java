@@ -24,6 +24,15 @@ public class MemberDTO implements Serializable {
         this.registDate = date + " " + time;
     }
 
+    public MemberDTO(int score, String id, String name, String registDate, int rank) {
+        // 로드 메소드에서 쓰는 생성자
+        this.score = score;
+        this.id = id;
+        this.name = name;
+        this.registDate = registDate;
+        this.rank = rank;
+    }
+
     public int getScore() {
         return score;
     }

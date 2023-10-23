@@ -103,8 +103,26 @@ public class MemberDAO {
                 members.add((MemberDTO) objIn.readObject());
             }
         } catch (EOFException e) {
-        } catch (IOException e) {
-        } catch (ClassNotFoundException e) {
+
+        } catch(InvalidClassException e){
+            System.out.println("class");
+        } catch(InvalidObjectException e){
+            System.out.println("obj");
+        } catch (NotSerializableException e){
+            System.out.println("noy");
+        } catch (WriteAbortedException e){
+            System.out.println("write");
+        } catch (NotActiveException e){
+            System.out.println("acitive");
+        } catch (StreamCorruptedException e){
+            System.out.println("stream");
+        }
+        catch (ObjectStreamException e) {
+            System.out.println("!!");
+        } catch (IOException e){
+            System.out.println("s");
+        }
+        catch (ClassNotFoundException e) {
         } finally {
             if (objIn != null) {
                 try {
