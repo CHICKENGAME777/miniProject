@@ -7,9 +7,10 @@ import java.util.List;
 
 public class test {
     public static void main(String[] args) {
-        List<MemberDTO> list = MemberDAO.getInstance().getMembers();
-        for (var x : list) {
-            System.out.println(x);
+        var x = MemberDAO.getInstance();
+        List<MemberDTO> list = x.getMembers();
+        for (var t : list) {
+            System.out.println(t);
         }
     }
 }

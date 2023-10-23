@@ -97,15 +97,22 @@ public class MemberDAO {
         ObjectInputStream objIn = null;
         try {
             objIn = new ObjectInputStream(new BufferedInputStream(new FileInputStream(
-                    "src/main/java/com/chickengame/mini/model/members.txt"
+                    "src/main/java/com/chickengame/mini/model/members"
             )));
             while (true) {
                 members.add((MemberDTO) objIn.readObject());
             }
         } catch (EOFException e) {
+            System.out.println("a");
         } catch (IOException e) {
+            System.out.println("s");
         } catch (ClassNotFoundException e) {
-        } finally {
+            System.out.println("s");
+
+        } catch (Exception e){
+            System.out.println("??");
+        }
+        finally {
             if (objIn != null) {
                 try {
                     objIn.close();
@@ -122,7 +129,7 @@ public class MemberDAO {
             objOut = new ObjectOutputStream(
                     new BufferedOutputStream(
                             new FileOutputStream(
-                                    "src/main/java/com/chickengame/mini/model/members.txt"
+                                    "src/main/java/com/chickengame/mini/model/members"
                             )
                     )
             );
