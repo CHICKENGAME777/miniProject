@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08d71383-8974-48b8-a564-2594be02009a" name="Changes" comment="[commit and push]&#10;final&#10;&#10;23년 10월 23일 오후 6시 11분" />
+    <list default="true" id="08d71383-8974-48b8-a564-2594be02009a" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,10 +37,13 @@
       </list>
     </option>
   </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="origin/junkyeong" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Seopia" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -61,8 +64,8 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;android.gradle.sync.needed&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/dev/clone/miniProject&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;junkyeong&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/dev/miniProject&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -75,33 +78,7 @@
       <recent name="C:\dev\miniProject\src\main\java\com\chickengame\mini" />
     </key>
   </component>
-  <component name="RunManager" selected="애플리케이션.Run">
-    <configuration name="Lotto" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.chickengame.mini.games.Lotto" />
-      <module name="sampleProject.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.chickengame.mini.games.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Run" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.chickengame.mini.run.Run" />
-      <module name="sampleProject.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.chickengame.mini.run.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.chickengame.mini.run.test" />
       <module name="sampleProject.main" />
@@ -115,10 +92,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="sampleProject" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="sampleProject" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="애플리케이션.Lotto" />
-        <item itemvalue="애플리케이션.Run" />
+        <item itemvalue="애플리케이션.test" />
+        <item itemvalue="애플리케이션.test" />
+        <item itemvalue="애플리케이션.test" />
+        <item itemvalue="애플리케이션.test" />
         <item itemvalue="애플리케이션.test" />
       </list>
     </recent_temporary>
@@ -133,6 +125,8 @@
       <updated>1697612473106</updated>
       <workItem from="1697612474326" duration="2175000" />
       <workItem from="1697696162865" duration="83000" />
+      <workItem from="1698021124650" duration="374000" />
+      <workItem from="1698021507850" duration="3173000" />
     </task>
     <task id="LOCAL-00001" summary="MainController 수정!!!">
       <option name="closed" value="true" />
@@ -158,31 +152,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697791875437</updated>
     </task>
-    <task id="LOCAL-00004" summary="김수연">
+    <task id="LOCAL-00004" summary="[commit and push]&#10;MemberDAO - sort 메소드 추가. (점수별로 내림차순으로 만드는 메소드)&#10;&#10;이준경&#10;23년 10월 23일 오전 11시 11분">
       <option name="closed" value="true" />
-      <created>1698045113964</created>
+      <created>1698027120538</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1698045113964</updated>
+      <updated>1698027120538</updated>
     </task>
-    <task id="LOCAL-00005" summary="[commit]&#10;workspace.xml 수정&#10;&#10;이준경&#10;23년 10월 23일 오전 11시 11분">
-      <option name="closed" value="true" />
-      <created>1698047437680</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1698047437680</updated>
-    </task>
-    <task id="LOCAL-00006" summary="[commit and push]&#10;final&#10;&#10;23년 10월 23일 오후 6시 11분">
-      <option name="closed" value="true" />
-      <created>1698052321587</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1698052321587</updated>
-    </task>
-    <option name="localTasksCounter" value="7" />
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,7 +177,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="junkyeong" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
@@ -215,24 +193,7 @@
     <MESSAGE value="MainController 수정!!!" />
     <MESSAGE value="MainController 수정!!" />
     <MESSAGE value="2023-10-20정지섭" />
-    <MESSAGE value="김수연" />
-    <MESSAGE value="[commit]&#10;workspace.xml 수정&#10;&#10;이준경&#10;23년 10월 23일 오전 11시 11분" />
-    <MESSAGE value="[commit and push]&#10;final&#10;&#10;23년 10월 23일 오후 6시 11분" />
-    <option name="LAST_COMMIT_MESSAGE" value="[commit and push]&#10;final&#10;&#10;23년 10월 23일 오후 6시 11분" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/chickengame/mini/run/test.java</url>
-          <line>8</line>
-          <properties class="com.chickengame.mini.run.test" method="main">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="[commit and push]&#10;MemberDAO - sort 메소드 추가. (점수별로 내림차순으로 만드는 메소드)&#10;&#10;이준경&#10;23년 10월 23일 오전 11시 11분" />
+    <option name="LAST_COMMIT_MESSAGE" value="[commit and push]&#10;MemberDAO - sort 메소드 추가. (점수별로 내림차순으로 만드는 메소드)&#10;&#10;이준경&#10;23년 10월 23일 오전 11시 11분" />
   </component>
 </project>
