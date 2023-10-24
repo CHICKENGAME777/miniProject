@@ -3,12 +3,8 @@ package com.chickengame.mini.view;
 import com.chickengame.mini.model.dao.MemberDAO;
 import com.chickengame.mini.model.dto.MemberDTO;
 
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 import java.util.Scanner;
-
-import static java.util.Comparator.*;
 
 public class MenuManager {
     private static MenuManager instance;
@@ -61,13 +57,7 @@ public class MenuManager {
 
     public void showRank() {
         List<MemberDTO> members = MemberDAO.getInstance().getMembers();
-                System.out.println("== 전체 멤버를 출력합니다. ==");
-                Collections.sort(members, new Comparator<MemberDTO>() {
-                    @Override
-                    public int compare(MemberDTO o1, MemberDTO o2) {
-                        return 0;
-                    }
-                });
+        System.out.println("== 전체 멤버를 출력합니다. ==");
         for (MemberDTO member : members) {
             System.out.println(member);
         }
