@@ -35,9 +35,9 @@ public class SlotMachine777 implements Game {
         while (true) {
             System.out.print("\u001B[0m");
             System.out.print("슬롯머신777을 돌리시겠습니까? ( Y / N ): ");
-            char user = sc.next().charAt(0);
+            String user = sc.next();
 
-            if (user == 'Y') {
+            if (user.equalsIgnoreCase("Y")) {
                 if (score == 0) {
                     System.out.printf("\n%55s", "\u001B[33m남은 기회가 없습니다.\n");
                     System.out.printf("\n%51s", "슬롯머신777을 종료합니다.\n");
@@ -108,7 +108,7 @@ public class SlotMachine777 implements Game {
                     System.out.printf("\n%45s", "꽝!\n");
                 }
                 System.out.printf("%52s", "남은 마일리지는 " + score + "점 입니다.\n\n");
-            } else if (user == 'N') {
+            } else if (user.equalsIgnoreCase("N")) {
                 System.out.printf("\n%50s", "\u001B[33m슬롯머신777을 종료합니다.");
                 System.out.print("\u001B[0m");
                 MemberDAO.getInstance().getMe().setScore(score);

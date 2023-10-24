@@ -63,11 +63,13 @@ public class RPG implements Game {
                     MemberDAO.getInstance().getMe().setScore(((playerLevel*100+experience)/10)+score);
                     break;
                 }
-            } else if (choice == 2) {
+            }
+            else if (choice == 2) {
                 playerHealth += 20;
                 System.out.println("체력이 회복되었습니다.");
                 System.out.println("현재 체력은 " + playerHealth + "입니다.");
-            } else if (choice == 3) {
+            }
+            else if (choice == 3) {
                 System.out.println("게임을 종료합니다.");
                 MemberDAO.getInstance().getMe().setScore(((playerLevel*100+experience)/10)+score);
                 break;
@@ -75,7 +77,5 @@ public class RPG implements Game {
                 System.out.println("잘못된 선택입니다. 다시 선택하세요.");
             }
         }
-
-        scanner.close();
     }
 }

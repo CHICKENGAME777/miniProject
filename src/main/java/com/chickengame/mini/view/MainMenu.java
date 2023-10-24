@@ -43,6 +43,7 @@ public class MainMenu {
                         break;
                     case 9:
                         System.out.println("게임을 종료합니다.");
+                        save();
                         return;
                     default:
                         System.out.println("잘못 입력했습니다. 다시 입력하세요.");
@@ -53,6 +54,10 @@ public class MainMenu {
                 sc.nextLine();
             }
         }
+    }
+
+    private void save() {
+        MenuManager.getInstance().save();
     }
 
     private void showRank() {

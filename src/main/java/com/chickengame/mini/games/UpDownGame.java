@@ -27,11 +27,12 @@ public class UpDownGame implements Game{
 
         Random r = new Random();
         Scanner sc = new Scanner(System.in);
-        boolean isSuccess = false;
+        boolean isSuccess;
 
         int[] reward = {5,3,1};        //보상으로 주는 스코어를 뜻함
 
         while (true) {
+            isSuccess=false;
             if(score <= 0){
                 System.out.println("스코어가 부족하여 게임을 할 수 없습니다!!");
                 break;
@@ -69,6 +70,7 @@ public class UpDownGame implements Game{
 
             while (true) {
                 System.out.println("˖✧˖✧˖✧˖✧˖✧˖✧˖✧˖✧˖✧˖✧˖✧˖✧˖✧˖✧˖");
+                score = MemberDAO.getInstance().getMe().getScore();
                 System.out.print("게임을 더 진행하시겠습니까? (Y/N) : ");
                 char ch = sc.next().charAt(0);
                 sc.nextLine();
