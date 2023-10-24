@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08d71383-8974-48b8-a564-2594be02009a" name="Changes" comment="[commit and push]&#10;초기 members.txt 파일 제작하는&#10;text.java 생성&#10;&#10;23년 10월 24일 오전 9시 28분">
+    <list default="true" id="08d71383-8974-48b8-a564-2594be02009a" name="Changes" comment="[commit and push]&#10;마지막 버그 수정&#10;&#10;23년 10월 24일 오후 3시 33분">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/RPG.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/RPG.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/SlotMachine777.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/SlotMachine777.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/UpDownGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/UpDownGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/model/members.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/model/members.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/view/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/view/MainMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/view/MenuManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/view/MenuManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +55,8 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
@@ -143,7 +139,7 @@
       <workItem from="1697696162865" duration="83000" />
       <workItem from="1698102843821" duration="1433000" />
       <workItem from="1698108785043" duration="84000" />
-      <workItem from="1698125888373" duration="1924000" />
+      <workItem from="1698125888373" duration="4711000" />
     </task>
     <task id="LOCAL-00001" summary="MainController 수정!!!">
       <option name="closed" value="true" />
@@ -209,7 +205,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698107410753</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="[commit and push]&#10;마지막 버그 수정&#10;&#10;23년 10월 24일 오후 3시 33분">
+      <option name="closed" value="true" />
+      <created>1698129267041</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1698129267041</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,6 +251,7 @@
     <MESSAGE value="[commit and push]&#10;final&#10;&#10;23년 10월 23일 오후 6시 11분" />
     <MESSAGE value="[commit and push]&#10;final workspace.xml&#10;&#10;23년 10월 23일 오후 6시 11분" />
     <MESSAGE value="[commit and push]&#10;초기 members.txt 파일 제작하는&#10;text.java 생성&#10;&#10;23년 10월 24일 오전 9시 28분" />
-    <option name="LAST_COMMIT_MESSAGE" value="[commit and push]&#10;초기 members.txt 파일 제작하는&#10;text.java 생성&#10;&#10;23년 10월 24일 오전 9시 28분" />
+    <MESSAGE value="[commit and push]&#10;마지막 버그 수정&#10;&#10;23년 10월 24일 오후 3시 33분" />
+    <option name="LAST_COMMIT_MESSAGE" value="[commit and push]&#10;마지막 버그 수정&#10;&#10;23년 10월 24일 오후 3시 33분" />
   </component>
 </project>
