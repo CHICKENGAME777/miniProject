@@ -20,8 +20,7 @@ public class MemberDTO implements Serializable {
         this.id = id;
         this.name = name;
         String date = String.valueOf(LocalDate.now());
-        String time = String.valueOf(LocalTime.now().withNano(0));
-        this.registDate = date + " " + time;
+        this.registDate = date;
     }
 
     public MemberDTO(int score, String id, String name, String registDate, int rank) {
