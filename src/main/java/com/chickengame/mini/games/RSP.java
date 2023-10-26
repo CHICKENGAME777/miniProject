@@ -1,15 +1,22 @@
 package com.chickengame.mini.games;
 
 import com.chickengame.mini.model.dao.MemberDAO;
+import com.chickengame.mini.model.dto.GameRankingDTO;
 
 import java.util.Random;
 import java.util.Scanner;
 
 
-public class RSP implements Game {
+public class RSP implements GameInterface {
+    private GameRankingDTO gameRankingDTO;
+
+    public RSP(GameRankingDTO gameRankingDTO) {
+        this.gameRankingDTO = gameRankingDTO;
+    }
+
     // 가위바위보 다희
     public void gameStart() {
-        int score = MemberDAO.getInstance().getMe().getScore();
+        int score = gameRankingDTO.getScore();
 
         while (true) {
 
@@ -26,7 +33,7 @@ public class RSP implements Game {
             int computerChoice = random.nextInt(3) + 1;
             if (userChoice == 4) {
                 System.out.println("게임을 종료합니다!!");
-                MemberDAO.getInstance().getMe().setScore(score);
+                gameRankingDTO.setScore(score);
                 break;
             } else if (userChoice > 4) {
                 System.out.println("1~4까지만 입력해주세요!");

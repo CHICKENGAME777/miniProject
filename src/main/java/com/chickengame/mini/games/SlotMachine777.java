@@ -1,10 +1,17 @@
 package com.chickengame.mini.games;
 
 import com.chickengame.mini.model.dao.MemberDAO;
+import com.chickengame.mini.model.dto.GameRankingDTO;
 
 import java.util.Scanner;
 
-public class SlotMachine777 implements Game {
+public class SlotMachine777 implements GameInterface {
+    private GameRankingDTO gameRankingDTO;
+
+    public SlotMachine777(GameRankingDTO gameRankingDTO) {
+        this.gameRankingDTO = gameRankingDTO;
+    }
+
     public void gameStart() {
         /* 슬롯머신 777
          *
@@ -22,7 +29,7 @@ public class SlotMachine777 implements Game {
 //        System.out.println("");
 //        System.out.println("축하합니다. 0 0 0 당첨입니다!);
 
-        int score = MemberDAO.getInstance().getMe().getScore();            // 마일리지
+        int score = gameRankingDTO.getScore();            // 마일리지
         int count = 0;              // 몇 번 만에 당첨 되는지
         int discount = -1;          // 마일리지 차감
         int correct = 50;           // 당첨되면 주는 마일리지
@@ -42,7 +49,7 @@ public class SlotMachine777 implements Game {
                     System.out.printf("\n%55s", "\u001B[33m남은 기회가 없습니다.\n");
                     System.out.printf("\n%51s", "슬롯머신777을 종료합니다.\n");
                     System.out.print("\u001B[0m");
-                    MemberDAO.getInstance().getMe().setScore(score);
+                    gameRankingDTO.setScore(score);
                     break;
                 }
 
@@ -111,7 +118,7 @@ public class SlotMachine777 implements Game {
             } else if (user.equalsIgnoreCase("N")) {
                 System.out.printf("\n%50s", "\u001B[33m슬롯머신777을 종료합니다.");
                 System.out.print("\u001B[0m");
-                MemberDAO.getInstance().getMe().setScore(score);
+                gameRankingDTO.setScore(score);
                 break;
             } else {
                 System.out.println("잘못 입력하셨습니다. 다시 입력하세요.\n");

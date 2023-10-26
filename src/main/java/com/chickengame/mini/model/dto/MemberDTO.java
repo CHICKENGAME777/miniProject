@@ -1,6 +1,7 @@
 package com.chickengame.mini.model.dto;
 
 import java.io.Serializable;
+import java.sql.Timestamp;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
@@ -8,26 +9,16 @@ public class MemberDTO implements Serializable {
     private int score;
     private String name;
     private String id;
-    private String registDate;
+    private java.sql.Timestamp registDate;
     private int rank;
 
     public MemberDTO() {
     }
 
-    public MemberDTO(String id, String name) {
-        //회원 가입 때 호출
-        this.score = 20;
-        this.id = id;
-        this.name = name;
-        String date = String.valueOf(LocalDate.now());
-        this.registDate = date;
-    }
-
-    public MemberDTO(int score, String id, String name, String registDate, int rank) {
-        // 로드 메소드에서 쓰는 생성자
+    public MemberDTO(int score, String name, String id, Timestamp registDate, int rank) {
         this.score = score;
-        this.id = id;
         this.name = name;
+        this.id = id;
         this.registDate = registDate;
         this.rank = rank;
     }
@@ -50,6 +41,18 @@ public class MemberDTO implements Serializable {
 
     public String getId() {
         return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public Timestamp getRegistDate() {
+        return registDate;
+    }
+
+    public void setRegistDate(Timestamp registDate) {
+        this.registDate = registDate;
     }
 
     public int getRank() {

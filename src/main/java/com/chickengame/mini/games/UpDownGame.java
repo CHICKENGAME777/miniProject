@@ -1,14 +1,21 @@
 package com.chickengame.mini.games;
 
 import com.chickengame.mini.model.dao.MemberDAO;
+import com.chickengame.mini.model.dto.GameRankingDTO;
+
 import java.util.InputMismatchException;
 import java.util.Random;
 import java.util.Scanner;
 
-public class UpDownGame implements Game{
+public class UpDownGame implements GameInterface {
+    private GameRankingDTO gameRankingDTO;
+
+    public UpDownGame(GameRankingDTO gameRankingDTO) {
+        this.gameRankingDTO = gameRankingDTO;
+    }
 
     public void gameStart() {
-        int score = MemberDAO.getInstance().getMe().getScore(); // 내 계정의 스코어를 뜻함
+        int score = gameRankingDTO.getScore(); // 내 계정의 스코어를 뜻함
         // 작업 된 것
         // 1. 계정의 스코어 점수 게임과 연동
         // 2. Game Interface 구현
@@ -53,7 +60,7 @@ public class UpDownGame implements Game{
                     } else {
                         System.out.println("맞추셨습니다! " + i + "번 째 시도에 성공하여 " + reward[i-1] + "점을 획득하셨습니다.");
                         isSuccess = true;
-                        MemberDAO.getInstance().getMe().setScore(score + reward[i-1]);
+                        gameRankingDTO.setScore(score + reward[i-1]);
                         break;
                     }
                 }catch (InputMismatchException e){
@@ -65,12 +72,12 @@ public class UpDownGame implements Game{
 
             if (!isSuccess) {
                 System.out.println("실패!");
-                MemberDAO.getInstance().getMe().setScore(score);
+                gameRankingDTO.setScore(score);
             }
 
             while (true) {
                 System.out.println("˖✧˖✧˖✧˖✧˖✧˖✧˖✧˖✧˖✧˖✧˖✧˖✧˖✧˖✧˖");
-                score = MemberDAO.getInstance().getMe().getScore();
+                score = gameRankingDTO.getScore();
                 System.out.print("게임을 더 진행하시겠습니까? (Y/N) : ");
                 char ch = sc.next().charAt(0);
                 sc.nextLine();

@@ -1,9 +1,15 @@
 package com.chickengame.mini.games;
 
+import com.chickengame.mini.model.dto.GameRankingDTO;
+
 import java.util.Random;
 
-public class Lotto implements Game{
+public class Lotto implements GameInterface {
+    private GameRankingDTO gameRankingDTO;
 
+    public Lotto(GameRankingDTO gameRankingDTO) {
+        this.gameRankingDTO = gameRankingDTO;
+    }
     /*           행운의 로또 번호            */
 
     public void gameStart() {

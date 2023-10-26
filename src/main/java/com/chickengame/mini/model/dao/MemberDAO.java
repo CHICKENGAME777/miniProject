@@ -1,21 +1,27 @@
 package com.chickengame.mini.model.dao;
 
+import com.chickengame.mini.controller.ConnectAndClose;
+import com.chickengame.mini.controller.DML;
+import com.chickengame.mini.controller.GameManager;
 import com.chickengame.mini.model.dto.MemberDTO;
 
 import java.io.*;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Properties;
 
 public class MemberDAO {
     private static MemberDAO instance;
     private List<MemberDTO> members;
     private MemberDTO me;
+    private GameManager gameManager;
 
     private MemberDAO() {
         members = new ArrayList<>();
         me = new MemberDTO();
-
+        gameManager = new GameManager();
 //        members.add(new MemberDTO(10, "아이디01", "이름01", 5));
 //        members.add(new MemberDTO(22, "아이디02", "이름02", 5));
 //        members.add(new MemberDTO(40, "아이디03", "이름03", 5));
@@ -28,7 +34,7 @@ public class MemberDAO {
 //        members.add(new MemberDTO(13, "아이디10", "이름10", 5));
 //        save(); // 테스트할때 처음 파일을 만들어야 되니깐 이부분 주석을 제거합니다. 충분히 데이터가 채워졌다면 주석으로 만들면 됩니다.
 
-        load(); //생성자 호출하면서 load() 부름
+        loadMembers(); //생성자 호출하면서 load() 부름
     }
 
     public static MemberDAO getInstance() {
@@ -62,6 +68,7 @@ public class MemberDAO {
     public MemberDTO getMe() {
         return me;
     }
+
     public void sortScoreDESC() {
         members.sort(new Comparator<>() {
             @Override
@@ -81,9 +88,9 @@ public class MemberDAO {
 
     public void deleteMe() {
         members.remove(me);
+        gameManager.saveGameRankings_DELETE(me);
+        saveMembers_DELETE(me);
         me = null;
-        sortScoreDESC();
-        save();
     }
 
 
@@ -93,54 +100,94 @@ public class MemberDAO {
         save();
     }
 
-    public void load() {
-        ObjectInputStream objIn = null;
+    public void loadMembers() {
+        Connection con = ConnectAndClose.getInstance().getConnection();
+        Statement stmt = null;
+        ResultSet rset = null;
+        String query = "SELECT " +
+                "SUM(GR.SCORE) AS SCORE," +
+                "M.NAME AS NAME," +
+                "M.MEMBERID AS MEMBERID," +
+                "M.REGISTDATE AS REGISTDATE " +
+                "FROM MEMBERS M " +
+                "JOIN GAMERANKINGS GR ON M.MEMBERID = GR.MEMBERID " +
+                "GROUP BY M.MEMBERID,M.NAME,M.REGISTDATE " +
+                "ORDER BY SCORE DESC";
         try {
-            objIn = new ObjectInputStream(new BufferedInputStream(new FileInputStream(
-                    "src/main/java/com/chickengame/mini/model/members.txt"
-            )));
-            while (true) {
-                members.add((MemberDTO) objIn.readObject());
-            }
-        } catch (EOFException e){}
-        catch (IOException e){
-        }
-        catch (ClassNotFoundException e) {
-        } finally {
-            if (objIn != null) {
-                try {
-                    objIn.close();
-                } catch (IOException e) {
+            stmt = con.createStatement();
+            rset = stmt.executeQuery(query);
+            int i = 1;
+            int temp = 0;
+            int inputScore = 0;
+            while (rset.next()) {
+                inputScore = rset.getInt("SCORE");
+                if (temp == inputScore) {
+                    i--;
                 }
+                MemberDTO memberDTO = new MemberDTO(
+                        rset.getInt("SCORE"),
+                        rset.getString("NAME"),
+                        rset.getString("MEMBERID"),
+                        rset.getTimestamp("REGISTDATE"),
+                        i
+                );
+                temp = inputScore;
+                members.add(memberDTO);
+                i++;
             }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
         }
     }
 
-    public void save() {
-        ObjectOutputStream objOut = null;
-
+    public int saveMembers_INSERT() {
+        Connection con = ConnectAndClose.getInstance().getConnection();
+        PreparedStatement pstmt = null;
+        int result = 0;
+        Properties prop = new Properties();
         try {
-            objOut = new ObjectOutputStream(
-                    new BufferedOutputStream(
-                            new FileOutputStream(
-                                    "src/main/java/com/chickengame/mini/model/members.txt"
-                            )
-                    )
-            );
-            for (int i = 0; i < members.size(); i++) {
-                objOut.writeObject(members.get(i));
-            }
-            objOut.flush();
-            System.out.println("성공적으로 저장되었습니다.");
+            prop.loadFromXML(new FileInputStream("src/main/java/com/chickengame/mini/model/dao/member-query.xml"));
+            String query;
+            query = prop.getProperty("insert");
         } catch (IOException e) {
-        } finally {
-            if (objOut != null) {
-                try {
-                    objOut.close();
-                } catch (IOException e) {
-                    throw new RuntimeException(e);
-                }
-            }
+            throw new RuntimeException(e);
         }
+        return result;
     }
+
+    public int saveMembers_DELETE(MemberDTO me) {
+        Connection con = ConnectAndClose.getInstance().getConnection();
+        PreparedStatement pstmt = null;
+        int result = 0;
+        Properties prop = new Properties();
+        try {
+            prop.loadFromXML(new FileInputStream("src/main/java/com/chickengame/mini/model/dao/member-query.xml"));
+            String query;
+            query = prop.getProperty("delete");
+            pstmt = con.prepareStatement(query);
+            pstmt.setString(1,me.getId());
+            result = pstmt.executeUpdate();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return result;
+    }
+
+    public int saveMembers_UPDATE() {
+        Connection con = ConnectAndClose.getInstance().getConnection();
+        PreparedStatement pstmt = null;
+        int result = 0;
+        Properties prop = new Properties();
+        try {
+            prop.loadFromXML(new FileInputStream("src/main/java/com/chickengame/mini/model/dao/member-query.xml"));
+            String query;
+            query = prop.getProperty("update");
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        return result;
+    }
+
 }

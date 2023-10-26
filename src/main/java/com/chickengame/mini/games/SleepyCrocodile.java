@@ -1,14 +1,20 @@
 package com.chickengame.mini.games;
 
 import com.chickengame.mini.model.dao.MemberDAO;
+import com.chickengame.mini.model.dto.GameRankingDTO;
 
 import java.util.Scanner;
 
-public class SleepyCrocodile implements Game {
+public class SleepyCrocodile implements GameInterface {
+    private GameRankingDTO gameRankingDTO;
+
+    public SleepyCrocodile(GameRankingDTO gameRankingDTO) {
+        this.gameRankingDTO = gameRankingDTO;
+    }
     @Override
     public void gameStart() {
         Scanner sc = new Scanner(System.in);
-        int mile = MemberDAO.getInstance().getMe().getScore();
+        int mile = gameRankingDTO.getScore();
         System.out.printf("\n%25s", "당신의 현재 스코어 : "+mile+"점");
         System.out.printf("\n%25s", "┌───────────────────┐");
         System.out.printf("\n%25s", "|  SleepyCrocodile  |");
@@ -101,7 +107,7 @@ public class SleepyCrocodile implements Game {
                         if (score == 19) {
                             System.out.println("\u001B[31m악어의 아픈 이빨을 피해 이빨 누르기 성공!");
                             System.out.print("\u001B[0m");
-                            MemberDAO.getInstance().getMe().setScore(mile+score);
+                            gameRankingDTO.setScore(mile+score);
                             break;
                         }
                     }

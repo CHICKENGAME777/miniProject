@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <comment/>
+    <entry key="insert">
+        INSERT INTO MEMBERS
+        VALUES (?, ?, ?)
+    </entry>
+    <entry key="update">
+        UPDATE MEMBERS
+        SET NAME = ?
+        WHERE MEMBERID = ?
+    </entry>
+    <entry key="delete">
+        DELETE
+        FROM MEMBERS
+        WHERE MEMBERID = ?
+    </entry>
+</properties>
