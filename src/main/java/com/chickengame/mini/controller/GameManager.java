@@ -69,7 +69,7 @@ public class GameManager {
         }
     }
 
-    private void loadGames() {
+    public void loadGames() {
         Connection con = ConnectAndClose.getInstance().getConnection();
         Statement stmt = null;
         ResultSet rset = null;
@@ -93,7 +93,7 @@ public class GameManager {
         }
     }
 
-    private void loadGameRankings() {
+    public void loadGameRankings() {
         Connection con = ConnectAndClose.getInstance().getConnection();
         Statement stmt = null;
         ResultSet rset = null;
@@ -119,7 +119,7 @@ public class GameManager {
         }
     }
 
-    private int saveGameRankings_INSERT(MemberDTO me) {
+    public int saveGameRankings_INSERT(MemberDTO me) {
         Connection con = ConnectAndClose.getInstance().getConnection();
         PreparedStatement pstmt = null;
         int result = 0;
@@ -164,7 +164,7 @@ public class GameManager {
         return result;
     }
 
-    private int saveGameRankings_UPDATE(GameRankingDTO gameRankingDTO) {
+    public int saveGameRankings_UPDATE(GameRankingDTO gameRankingDTO) {
         Connection con = ConnectAndClose.getInstance().getConnection();
         PreparedStatement pstmt = null;
         int result = 0;

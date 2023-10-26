@@ -4,24 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08d71383-8974-48b8-a564-2594be02009a" name="Changes" comment="[commit and push]&#10;save 와 load 처리 직전까지 완료&#10;&#10;[이준경]&#10;23년 10월 27일 오전 00시 07분">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/config/connection-info.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/controller/ConnectAndClose.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/controller/game-ranking-query.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/model/dao/member-query.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/model/dto/GameDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/model/dto/GameRankingDTO.java" afterDir="false" />
+    <list default="true" id="08d71383-8974-48b8-a564-2594be02009a" name="Changes" comment="[commit and push]&#10;save 와 load 처리 직전까지 완료&#10;안쓰는 getter/setter 도 진행 예정&#10;&#10;[이준경]&#10;23년 10월 27일 오전 00시 07분">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/controller/GameManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/controller/GameManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/GameInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/Lotto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/Lotto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/RPG.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/RPG.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/RSP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/RSP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/SleepyCrocodile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/SleepyCrocodile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/SlotMachine777.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/SlotMachine777.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/UpDownGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/UpDownGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/model/dao/MemberDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/model/dao/MemberDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/model/dto/MemberDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/model/dto/MemberDTO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +166,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698027120538</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="[commit and push]&#10;save 와 load 처리 직전까지 완료&#10;안쓰는 getter/setter 도 진행 예정&#10;&#10;[이준경]&#10;23년 10월 27일 오전 00시 07분">
+      <option name="closed" value="true" />
+      <created>1698332927840</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1698332927840</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,6 +209,7 @@
     <MESSAGE value="2023-10-20정지섭" />
     <MESSAGE value="[commit and push]&#10;MemberDAO - sort 메소드 추가. (점수별로 내림차순으로 만드는 메소드)&#10;&#10;이준경&#10;23년 10월 23일 오전 11시 11분" />
     <MESSAGE value="[commit and push]&#10;save 와 load 처리 직전까지 완료&#10;&#10;[이준경]&#10;23년 10월 27일 오전 00시 07분" />
-    <option name="LAST_COMMIT_MESSAGE" value="[commit and push]&#10;save 와 load 처리 직전까지 완료&#10;&#10;[이준경]&#10;23년 10월 27일 오전 00시 07분" />
+    <MESSAGE value="[commit and push]&#10;save 와 load 처리 직전까지 완료&#10;안쓰는 getter/setter 도 진행 예정&#10;&#10;[이준경]&#10;23년 10월 27일 오전 00시 07분" />
+    <option name="LAST_COMMIT_MESSAGE" value="[commit and push]&#10;save 와 load 처리 직전까지 완료&#10;안쓰는 getter/setter 도 진행 예정&#10;&#10;[이준경]&#10;23년 10월 27일 오전 00시 07분" />
   </component>
 </project>

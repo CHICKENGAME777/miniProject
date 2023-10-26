@@ -1,7 +1,6 @@
 package com.chickengame.mini.model.dao;
 
 import com.chickengame.mini.controller.ConnectAndClose;
-import com.chickengame.mini.controller.DML;
 import com.chickengame.mini.controller.GameManager;
 import com.chickengame.mini.model.dto.MemberDTO;
 
@@ -9,6 +8,7 @@ import java.io.*;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.Date;
 import java.util.List;
 import java.util.Properties;
 
@@ -17,6 +17,7 @@ public class MemberDAO {
     private List<MemberDTO> members;
     private MemberDTO me;
     private GameManager gameManager;
+    java.util.Date currentDate = new Date();
 
     private MemberDAO() {
         members = new ArrayList<>();
@@ -69,23 +70,6 @@ public class MemberDAO {
         return me;
     }
 
-    public void sortScoreDESC() {
-        members.sort(new Comparator<>() {
-            @Override
-            public int compare(MemberDTO o1, MemberDTO o2) {
-                return o2.getScore() - o1.getScore();
-            }
-        });
-        members.get(0).setRank(1);
-        for (int i = 1; i < members.size(); i++) {
-            if (members.get(i - 1).getScore() == members.get(i).getScore()) {
-                members.get(i).setRank(members.get(i - 1).getRank());
-            } else {
-                members.get(i).setRank(i + 1);
-            }
-        }
-    }
-
     public void deleteMe() {
         members.remove(me);
         gameManager.saveGameRankings_DELETE(me);
@@ -96,8 +80,8 @@ public class MemberDAO {
 
     public void addMember(MemberDTO memberDTO) {
         members.add(memberDTO);
-        sortScoreDESC();
-        save();
+        saveMembers_INSERT(memberDTO);
+        gameManager.saveGameRankings_INSERT(memberDTO);
     }
 
     public void loadMembers() {
@@ -140,32 +124,18 @@ public class MemberDAO {
         }
     }
 
-    public int saveMembers_INSERT() {
+    public int saveMembers_INSERT(MemberDTO memberDTO) {
         Connection con = ConnectAndClose.getInstance().getConnection();
         PreparedStatement pstmt = null;
         int result = 0;
         Properties prop = new Properties();
         try {
             prop.loadFromXML(new FileInputStream("src/main/java/com/chickengame/mini/model/dao/member-query.xml"));
-            String query;
-            query = prop.getProperty("insert");
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-        return result;
-    }
-
-    public int saveMembers_DELETE(MemberDTO me) {
-        Connection con = ConnectAndClose.getInstance().getConnection();
-        PreparedStatement pstmt = null;
-        int result = 0;
-        Properties prop = new Properties();
-        try {
-            prop.loadFromXML(new FileInputStream("src/main/java/com/chickengame/mini/model/dao/member-query.xml"));
-            String query;
-            query = prop.getProperty("delete");
+            String query = prop.getProperty("insert");
             pstmt = con.prepareStatement(query);
-            pstmt.setString(1,me.getId());
+            pstmt.setString(1, memberDTO.getId());
+            pstmt.setString(2, memberDTO.getName());
+            pstmt.setTimestamp(3, new Timestamp(currentDate.getTime()));
             result = pstmt.executeUpdate();
         } catch (IOException e) {
             throw new RuntimeException(e);
@@ -175,7 +145,26 @@ public class MemberDAO {
         return result;
     }
 
-    public int saveMembers_UPDATE() {
+    public int saveMembers_DELETE(MemberDTO memberDTO) {
+        Connection con = ConnectAndClose.getInstance().getConnection();
+        PreparedStatement pstmt = null;
+        int result = 0;
+        Properties prop = new Properties();
+        try {
+            prop.loadFromXML(new FileInputStream("src/main/java/com/chickengame/mini/model/dao/member-query.xml"));
+            String query = prop.getProperty("delete");
+            pstmt = con.prepareStatement(query);
+            pstmt.setString(1, memberDTO.getId());
+            result = pstmt.executeUpdate();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return result;
+    }
+
+    public int saveMembers_UPDATE(MemberDTO memberDTO) {
         Connection con = ConnectAndClose.getInstance().getConnection();
         PreparedStatement pstmt = null;
         int result = 0;
@@ -184,10 +173,15 @@ public class MemberDAO {
             prop.loadFromXML(new FileInputStream("src/main/java/com/chickengame/mini/model/dao/member-query.xml"));
             String query;
             query = prop.getProperty("update");
+            pstmt = con.prepareStatement(query);
+            pstmt.setString(1, memberDTO.getName());
+            pstmt.setString(2, memberDTO.getId());
+            result = pstmt.executeUpdate();
         } catch (IOException e) {
+            throw new RuntimeException(e);
+        } catch (SQLException e) {
             throw new RuntimeException(e);
         }
         return result;
     }
-
 }
