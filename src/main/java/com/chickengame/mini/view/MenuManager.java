@@ -109,4 +109,8 @@ public class MenuManager {
             }
         }
     }
+
+    public void save() {
+        MemberDAO.getInstance().save();
+    }
 }

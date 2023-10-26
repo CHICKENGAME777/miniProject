@@ -1,15 +1,11 @@
 package com.chickengame.mini.games;
 
 import com.chickengame.mini.model.dao.MemberDAO;
-import com.chickengame.mini.model.dto.MemberDTO;
 
 import java.util.Scanner;
 
 public class SlotMachine777 implements Game {
-
     public void gameStart() {
-
-
         /* 슬롯머신 777
          *
          * 1. 인덱스에 문자 세 개 입력 (7, ♥, ⑩)
@@ -26,15 +22,12 @@ public class SlotMachine777 implements Game {
 //        System.out.println("");
 //        System.out.println("축하합니다. 0 0 0 당첨입니다!);
 
-
-
         int score = MemberDAO.getInstance().getMe().getScore();            // 마일리지
         int count = 0;              // 몇 번 만에 당첨 되는지
         int discount = -1;          // 마일리지 차감
         int correct = 50;           // 당첨되면 주는 마일리지
 
         Scanner sc = new Scanner(System.in);
-        System.out.println(score);
         System.out.printf("%55s", "\u001B[33m=============\n");
 
         System.out.printf("%53s", "\u001B[33m| 슬롯머신777 |\n");
@@ -42,10 +35,10 @@ public class SlotMachine777 implements Game {
         while (true) {
             System.out.print("\u001B[0m");
             System.out.print("슬롯머신777을 돌리시겠습니까? ( Y / N ): ");
-            char user = sc.next().charAt(0);
+            String user = sc.next();
 
-            if (user == 'Y') {
-                if(score == 0) {
+            if (user.equalsIgnoreCase("Y")) {
+                if (score == 0) {
                     System.out.printf("\n%55s", "\u001B[33m남은 기회가 없습니다.\n");
                     System.out.printf("\n%51s", "슬롯머신777을 종료합니다.\n");
                     System.out.print("\u001B[0m");
@@ -115,7 +108,7 @@ public class SlotMachine777 implements Game {
                     System.out.printf("\n%45s", "꽝!\n");
                 }
                 System.out.printf("%52s", "남은 마일리지는 " + score + "점 입니다.\n\n");
-            } else if(user == 'N') {
+            } else if (user.equalsIgnoreCase("N")) {
                 System.out.printf("\n%50s", "\u001B[33m슬롯머신777을 종료합니다.");
                 System.out.print("\u001B[0m");
                 MemberDAO.getInstance().getMe().setScore(score);

@@ -28,7 +28,7 @@ public class MemberDAO {
 //        members.add(new MemberDTO(13, "아이디10", "이름10", 5));
 //        save(); // 테스트할때 처음 파일을 만들어야 되니깐 이부분 주석을 제거합니다. 충분히 데이터가 채워졌다면 주석으로 만들면 됩니다.
 
-        load();
+        load(); //생성자 호출하면서 load() 부름
     }
 
     public static MemberDAO getInstance() {
@@ -102,9 +102,10 @@ public class MemberDAO {
             while (true) {
                 members.add((MemberDTO) objIn.readObject());
             }
-        } catch (EOFException e) {
-        } catch (IOException e) {
-        } catch (ClassNotFoundException e) {
+        } catch (EOFException e){}
+        catch (IOException e){
+        }
+        catch (ClassNotFoundException e) {
         } finally {
             if (objIn != null) {
                 try {
