@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08d71383-8974-48b8-a564-2594be02009a" name="Changes" comment="[commit and push]&#10;필요없어진 members.txt 파일 삭제&#10;&#10;[이준경]&#10;23년 10월 27일 오후 12시 10분">
+    <list default="true" id="08d71383-8974-48b8-a564-2594be02009a" name="Changes" comment="[commit and push]&#10;버그 수정&#10;&#10;[이준경]&#10;23년 10월 27일 오후 12시 40분">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/controller/GameManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/controller/GameManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/SleepyCrocodile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chickengame/mini/games/SleepyCrocodile.java" afterDir="false" />
@@ -192,7 +192,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698376247563</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="[commit and push]&#10;버그 수정&#10;&#10;[이준경]&#10;23년 10월 27일 오후 12시 40분">
+      <option name="closed" value="true" />
+      <created>1698378040401</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1698378040401</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,7 +238,8 @@
     <MESSAGE value="[commit and push]&#10;save 와 load 처리 직전까지 완료&#10;안쓰는 getter/setter 도 진행 예정&#10;&#10;[이준경]&#10;23년 10월 27일 오전 00시 07분" />
     <MESSAGE value="[commit and push]&#10;save and load 까지 완료.&#10;MVC2의 경우 다음 프로젝트부터 확실히 지킬 예정입니다&#10;&#10;[이준경]&#10;23년 10월 27일 오전 11시 59분" />
     <MESSAGE value="[commit and push]&#10;필요없어진 members.txt 파일 삭제&#10;&#10;[이준경]&#10;23년 10월 27일 오후 12시 10분" />
-    <option name="LAST_COMMIT_MESSAGE" value="[commit and push]&#10;필요없어진 members.txt 파일 삭제&#10;&#10;[이준경]&#10;23년 10월 27일 오후 12시 10분" />
+    <MESSAGE value="[commit and push]&#10;버그 수정&#10;&#10;[이준경]&#10;23년 10월 27일 오후 12시 40분" />
+    <option name="LAST_COMMIT_MESSAGE" value="[commit and push]&#10;버그 수정&#10;&#10;[이준경]&#10;23년 10월 27일 오후 12시 40분" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
