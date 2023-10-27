@@ -35,7 +35,7 @@ public class MainMenu {
                         break;
                     case 3:
                         int cases = updateProfile();
-                        if(cases == 1)
+                        if (cases == 1)
                             return;
                         break;
                     case 4:
@@ -43,21 +43,16 @@ public class MainMenu {
                         break;
                     case 9:
                         System.out.println("게임을 종료합니다.");
-                        save();
                         return;
                     default:
                         System.out.println("잘못 입력했습니다. 다시 입력하세요.");
                         break;
                 }
-            }catch (InputMismatchException e){
+            } catch (InputMismatchException e) {
                 System.out.println("숫자로 입력해주세요.");
                 sc.nextLine();
             }
         }
-    }
-
-    private void save() {
-        MenuManager.getInstance().save();
     }
 
     private void showRank() {
@@ -70,8 +65,7 @@ public class MainMenu {
 
     private int updateProfile() {
         int cases = MenuManager.getInstance().updateProfile();
-        if(cases == 1)
-        {
+        if (cases == 1) {
             return 1; // 게임을 아예 종료하는 케이스
         }
         return 0;

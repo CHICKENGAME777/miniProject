@@ -2,8 +2,7 @@ package com.chickengame.mini.model.dto;
 
 import java.io.Serializable;
 import java.sql.Timestamp;
-import java.time.LocalDate;
-import java.time.LocalTime;
+import java.util.Date;
 
 public class MemberDTO implements Serializable {
     private int score;
@@ -15,12 +14,18 @@ public class MemberDTO implements Serializable {
     public MemberDTO() {
     }
 
-    public MemberDTO(int score, String name, String id, Timestamp registDate, int rank) {
+    public MemberDTO(String name, String id) {
+        this.score = 120;
+        this.name = name;
+        this.id = id;
+        java.util.Date currentDate = new Date();
+        this.registDate = new Timestamp(currentDate.getTime());
+    }
+    public MemberDTO(int score, String name, String id, Timestamp registDate) {
         this.score = score;
         this.name = name;
         this.id = id;
         this.registDate = registDate;
-        this.rank = rank;
     }
 
     public int getScore() {
@@ -43,16 +48,8 @@ public class MemberDTO implements Serializable {
         return id;
     }
 
-    public void setId(String id) {
-        this.id = id;
-    }
-
     public Timestamp getRegistDate() {
         return registDate;
-    }
-
-    public void setRegistDate(Timestamp registDate) {
-        this.registDate = registDate;
     }
 
     public int getRank() {

@@ -3,8 +3,8 @@
 <properties>
     <comment/>
     <entry key="insert">
-        INSERT INTO GAMERANKINGS
-        VALUES (?, ?, ?, ?, ?)
+        INSERT INTO GAMERANKINGS (MEMBERID, GAMEID, SCORE, RANKDATE)
+        VALUES (?, ?, ?, ?)
     </entry>
     <entry key="update">
         UPDATE GAMERANKINGS

@@ -3,6 +3,7 @@ package com.chickengame.mini.view;
 import com.chickengame.mini.model.dao.MemberDAO;
 import com.chickengame.mini.model.dto.MemberDTO;
 
+import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
 
@@ -44,9 +45,9 @@ public class MenuManager {
         if (index < 0) {
             System.out.print("이름: ");
             String name = sc.nextLine();
-            MemberDTO me = new MemberDTO(id, name);
-            MemberDAO.getInstance().addMember(me);
+            MemberDTO me = new MemberDTO(name, id);
             MemberDAO.getInstance().setMe(me);
+            MemberDAO.getInstance().addMember(me);
             System.out.println("회원가입을 환영합니다.");
             return true;
         } else {
@@ -77,40 +78,43 @@ public class MenuManager {
             System.out.println("2. 계정 삭제");
             System.out.println("9. 이전 메뉴로 나가기");
             System.out.print("메뉴: ");
-            int menu = sc.nextInt();
-            switch (menu) {
-                case 1:
-                    System.out.print("변경할 이름: ");
-                    sc.nextLine();
-                    String name = sc.nextLine();
-                    me.setName(name);
-                    System.out.println("변경이 완료됐습니다.");
-                    return 0;
-                case 2:
-                    System.out.print("정말로 삭제하시겠습니까? (Y, N) : ");
-                    sc.nextLine();
-                    String delete = sc.nextLine();
-                    if (delete.equalsIgnoreCase("Y")) {
-                        MemberDAO.getInstance().deleteMe();
-                        System.out.println("삭제를 완료했습니다. 게임을 종료합니다.");
-                        return 1; // 게임을 종료하는 케이스
-                    } else if (delete.equalsIgnoreCase("N")) {
-                        System.out.println("메인 메뉴로 나갑니다.");
-                    } else {
-                        System.out.println("잘못 입력했습니다. 메인메뉴로 나갑니다.");
-                    }
-                    return 0;
-                case 9:
-                    System.out.println("이전 메뉴로 나갑니다.");
-                    return 0;
-                default:
-                    System.out.println("잘못 입력했습니다. 다시 입력해주세요.");
-                    break;
+            try {
+                int menu = sc.nextInt();
+                switch (menu) {
+                    case 1:
+                        System.out.print("변경할 이름: ");
+                        sc.nextLine();
+                        String name = sc.nextLine();
+                        me.setName(name);
+                        MemberDAO.getInstance().saveMembers_UPDATE(me);
+                        System.out.println("변경이 완료됐습니다.");
+                        return 0;
+                    case 2:
+                        System.out.print("정말로 삭제하시겠습니까? (Y, N) : ");
+                        sc.nextLine();
+                        String delete = sc.nextLine();
+                        if (delete.equalsIgnoreCase("Y")) {
+                            MemberDAO.getInstance().deleteMe();
+                            System.out.println("삭제를 완료했습니다. 게임을 종료합니다.");
+                            return 1; // 게임을 종료하는 케이스
+                        } else if (delete.equalsIgnoreCase("N")) {
+                            System.out.println("메인 메뉴로 나갑니다.");
+                        } else {
+                            System.out.println("잘못 입력했습니다. 메인메뉴로 나갑니다.");
+                        }
+                        return 0;
+                    case 9:
+                        System.out.println("이전 메뉴로 나갑니다.");
+                        return 0;
+                    default:
+                        System.out.println("잘못 입력했습니다. 다시 입력해주세요.");
+                        break;
+                }
+            } catch (InputMismatchException e) {
+                System.out.println("숫자로 입력해주세요.");
+                sc.nextLine();
             }
         }
     }
 
-    public void save() {
-        MemberDAO.getInstance().save();
-    }
 }
