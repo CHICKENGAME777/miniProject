@@ -18,7 +18,6 @@ public class GameManager {
     private List<GameDTO> gameList;
     private List<GameRankingDTO> gameRankingList;
     private List<GameRankingDTO> meGameRankingList;
-
     Scanner sc;
 
     public GameManager() {
@@ -62,6 +61,12 @@ public class GameManager {
                 } else {
                     gameMenuList.get(num - 1).gameStart();
                     saveGameRankings_UPDATE(meGameRankingList.get(num - 1));
+                    int scoreSum = 0;
+                    for (int i = 0; i < meGameRankingList.size(); i++) {
+                        scoreSum += meGameRankingList.get(i).getScore();
+                    }
+                    MemberDAO.getInstance().getMe().setScore(scoreSum);
+                    MemberDAO.getInstance().sortScoreDesc();
                 }
             } catch (InputMismatchException e) {
                 System.out.println("숫자로 입력해주세요.");

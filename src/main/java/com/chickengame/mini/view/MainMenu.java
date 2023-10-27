@@ -1,6 +1,7 @@
 package com.chickengame.mini.view;
 
 import com.chickengame.mini.controller.GameManager;
+import com.chickengame.mini.model.dao.MemberDAO;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

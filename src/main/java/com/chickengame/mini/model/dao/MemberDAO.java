@@ -2,13 +2,16 @@ package com.chickengame.mini.model.dao;
 
 import com.chickengame.mini.controller.ConnectAndClose;
 import com.chickengame.mini.controller.GameManager;
+import com.chickengame.mini.model.dto.GameRankingDTO;
 import com.chickengame.mini.model.dto.MemberDTO;
 
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.sql.*;
-import java.util.Date;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+import java.util.Properties;
 
 public class MemberDAO {
     private static MemberDAO instance;
@@ -82,7 +85,10 @@ public class MemberDAO {
         sortScoreDesc();
     }
 
-    private void sortScoreDesc() {
+    public void sortScoreDesc() {
+        if (members.size() == 0) {
+            return;
+        }
         members.sort(new Comparator<>() {
             @Override
             public int compare(MemberDTO o1, MemberDTO o2) {
@@ -129,7 +135,7 @@ public class MemberDAO {
             sortScoreDesc();
         } catch (SQLException e) {
             throw new RuntimeException(e);
-        }finally {
+        } finally {
             ConnectAndClose.getInstance().close(rset);
             ConnectAndClose.getInstance().close(stmt);
         }
@@ -152,7 +158,7 @@ public class MemberDAO {
             throw new RuntimeException(e);
         } catch (SQLException e) {
             throw new RuntimeException(e);
-        }finally {
+        } finally {
             ConnectAndClose.getInstance().close(pstmt);
         }
         return result;
@@ -173,7 +179,7 @@ public class MemberDAO {
             throw new RuntimeException(e);
         } catch (SQLException e) {
             throw new RuntimeException(e);
-        }finally {
+        } finally {
             ConnectAndClose.getInstance().close(pstmt);
         }
         return result;
@@ -196,7 +202,7 @@ public class MemberDAO {
             throw new RuntimeException(e);
         } catch (SQLException e) {
             throw new RuntimeException(e);
-        }finally {
+        } finally {
             ConnectAndClose.getInstance().close(pstmt);
         }
         return result;
